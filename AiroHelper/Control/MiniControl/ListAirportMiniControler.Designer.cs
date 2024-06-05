@@ -78,6 +78,7 @@
             // 
             this.labelCity.AutoSize = true;
             this.labelCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.labelCity.ForeColor = System.Drawing.Color.White;
             this.labelCity.Location = new System.Drawing.Point(382, 13);
             this.labelCity.Name = "labelCity";
             this.labelCity.Size = new System.Drawing.Size(42, 15);
@@ -106,6 +107,7 @@
             // 
             this.labelCode.AutoSize = true;
             this.labelCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.labelCode.ForeColor = System.Drawing.Color.White;
             this.labelCode.Location = new System.Drawing.Point(269, 13);
             this.labelCode.Name = "labelCode";
             this.labelCode.Size = new System.Drawing.Size(29, 15);
@@ -123,6 +125,7 @@
             // 
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelName.ForeColor = System.Drawing.Color.White;
             this.labelName.Location = new System.Drawing.Point(69, 13);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(32, 15);

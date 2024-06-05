@@ -77,6 +77,7 @@
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
+            this.labelPassword.ForeColor = System.Drawing.Color.White;
             this.labelPassword.Location = new System.Drawing.Point(487, 13);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(45, 13);
@@ -104,6 +105,7 @@
             // labelName
             // 
             this.labelName.AutoSize = true;
+            this.labelName.ForeColor = System.Drawing.Color.White;
             this.labelName.Location = new System.Drawing.Point(282, 13);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(38, 13);
@@ -120,6 +122,7 @@
             // labelMail
             // 
             this.labelMail.AutoSize = true;
+            this.labelMail.ForeColor = System.Drawing.Color.White;
             this.labelMail.Location = new System.Drawing.Point(69, 13);
             this.labelMail.Name = "labelMail";
             this.labelMail.Size = new System.Drawing.Size(37, 13);

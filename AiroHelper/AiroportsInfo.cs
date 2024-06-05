@@ -17,6 +17,7 @@ namespace AiroHelper
     public partial class AiroportsInfo : Form
     {
         DataBase dataBase = new DataBase();
+        
         public AiroportsInfo()
         {
             InitializeComponent();
@@ -108,7 +109,7 @@ namespace AiroHelper
         {
             ListAdminUserControl admin = new ListAdminUserControl();
             admin.Location = new Point(220, 80);
-            admin.Size = new Size(853, 440);
+            admin.Size = new Size(866, 535);
             this.Controls.Add(admin);
             admin.BringToFront();
 
@@ -168,6 +169,7 @@ namespace AiroHelper
         }
         public void PrintListAirport(FlowLayoutPanelForListAirportControler UserListControl)
         {
+
             dataBase.OpenConnection();
             SqlCommand command = new SqlCommand("SELECT * FROM Airoports", dataBase.GetConnection());
             SqlDataReader reader = command.ExecuteReader();
@@ -186,6 +188,7 @@ namespace AiroHelper
                     AirportListMiniControl item = new AirportListMiniControl(airportImage, description);
 
                     UserListControl.flowLayoutPanelAirPort.Controls.Add(item);
+
                 }
             }
             reader.Close();
@@ -209,6 +212,7 @@ namespace AiroHelper
         {
             MapForm mapForm = new MapForm();
             mapForm.Show();
+
         }
 
         private void PictureBoxLogReg_Click(object sender, EventArgs e)

@@ -69,7 +69,7 @@ namespace AiroHelper
             var mail = MailT.Text;
             var login = LoginT.Text;
             var password = PassT.Text;
-            var role = 1;
+            var role = 2;
 
             // Проверка на пустые поля
             if (string.IsNullOrWhiteSpace(mail) || string.IsNullOrWhiteSpace(login) || string.IsNullOrWhiteSpace(password))
@@ -83,7 +83,7 @@ namespace AiroHelper
                 return; // Прекращаем выполнение метода
             }
 
-            string querystring = $"insert into Users(User_Email, User_Name, User_Password, User_Role) values ('{mail}', '{login}', '{password}')";
+            string querystring = $"insert into Users(User_Email, User_Name, User_Password, User_Role) values ('{mail}', '{login}', '{password}', '{role}')";
 
             SqlCommand command = new SqlCommand(querystring, dataBase.GetConnection());
 

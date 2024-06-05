@@ -293,24 +293,46 @@ namespace AiroHelper
         {
             this.Close();
         }
-
         private void AddBtn_Click(object sender, EventArgs e)
         {
-            dataBase.OpenConnection();
-            MemoryStream memoryStream = new MemoryStream();
-            SharePictureBox.Image.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Png);
-            byte[] Photo = new byte[memoryStream.Length];
+            try
+            {
+                if (string.IsNullOrEmpty(TextBoxName.Text) ||
+                    string.IsNullOrEmpty(limitedTextBox.Text) ||
+                    string.IsNullOrEmpty(ComboBoxCity.Text) ||
+                    string.IsNullOrEmpty(AdressTextBox.Text) ||
+                    string.IsNullOrEmpty(TextBoxCoorditik_X.Text) ||
+                    string.IsNullOrEmpty(TextBoxCoorditik_Y.Text) ||
+                    string.IsNullOrEmpty(TextBoxCompany.Text) ||
+                    SharePictureBox.Image == null ||
+                    string.IsNullOrEmpty(TextBoxDescription.Text))
+                {
+                    MessageBox.Show("Пожалуйста, заполните все поля.");
+                    return;
+                }
+                
+                dataBase.OpenConnection();
+                MemoryStream memoryStream = new MemoryStream();
+                SharePictureBox.Image.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Png);
+                byte[] Photo = new byte[memoryStream.Length];
 
-            memoryStream.Position = 0;
-            memoryStream.Read(Photo, 0, Photo.Length);
-            
-            SqlCommand command = new SqlCommand("INSERT INTO Airoports (Airoport_Name, Airoport_Code, Airoport_City, Airoport_Аddress, Airoport_Location_x, Airoport_Location_y, Airoport_Company, Airoport_Map_Image, Airoport_Description) VALUES ('" + TextBoxName.Text + "', '" + limitedTextBox.Text + "', '" + ComboBoxCity.Text + "', '" + AdressTextBox.Text + "', '" + TextBoxCoorditik_X.Text + "', '" + TextBoxCoorditik_Y.Text + "', '" + TextBoxCompany.Text + "', @photo, '" + TextBoxDescription.Text + "')", dataBase.GetConnection());
-            command.Parameters.AddWithValue("@photo", Photo);
+                memoryStream.Position = 0;
+                memoryStream.Read(Photo, 0, Photo.Length);
 
-            command.ExecuteNonQuery();
-            dataBase.CloseConnection();
+                SqlCommand command = new SqlCommand("INSERT INTO Airoports (Airoport_Name, Airoport_Code, Airoport_City, Airoport_Аddress, Airoport_Location_x, Airoport_Location_y, Airoport_Company, Airoport_Map_Image, Airoport_Description) VALUES ('" + TextBoxName.Text + "', '" + limitedTextBox.Text + "', '" + ComboBoxCity.Text + "', '" + AdressTextBox.Text + "', '" + TextBoxCoorditik_X.Text + "', '" + TextBoxCoorditik_Y.Text + "', '" + TextBoxCompany.Text + "', @photo, '" + TextBoxDescription.Text + "')", dataBase.GetConnection());
+                command.Parameters.AddWithValue("@photo", Photo);
 
-            this.Close();
+                command.ExecuteNonQuery();
+                dataBase.CloseConnection();
+
+                MessageBox.Show("Аэропорт был успешно добавлен");
+                this.Close();
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Не удалось добавить аэропорт: " + ex.Message);
+            }
         }
         private void ClearBtn_Click(object sender, EventArgs e)
         {

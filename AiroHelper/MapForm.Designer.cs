@@ -59,10 +59,10 @@
             this.panelMenu.Controls.Add(this.btnExit);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Location = new System.Drawing.Point(0, 20);
-            this.panelMenu.MaximumSize = new System.Drawing.Size(220, 517);
+            this.panelMenu.MaximumSize = new System.Drawing.Size(220, 589);
             this.panelMenu.MinimumSize = new System.Drawing.Size(65, 517);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 517);
+            this.panelMenu.Size = new System.Drawing.Size(220, 589);
             this.panelMenu.TabIndex = 1;
             // 
             // guna2VSeparator11
@@ -75,13 +75,14 @@
             // 
             // guna2Separator2
             // 
-            this.guna2Separator2.Location = new System.Drawing.Point(12, 457);
+            this.guna2Separator2.Location = new System.Drawing.Point(12, 519);
             this.guna2Separator2.Name = "guna2Separator2";
             this.guna2Separator2.Size = new System.Drawing.Size(200, 10);
             this.guna2Separator2.TabIndex = 6;
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.SlateBlue;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -97,7 +98,7 @@
             this.button1.Text = "   Карта";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // btnExit
             // 
@@ -108,7 +109,7 @@
             this.btnExit.ForeColor = System.Drawing.Color.LightCyan;
             this.btnExit.Image = global::AiroHelper.Properties.Resources.exit;
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(-3, 457);
+            this.btnExit.Location = new System.Drawing.Point(0, 526);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnExit.Size = new System.Drawing.Size(220, 60);
@@ -185,7 +186,7 @@
             this.gMapControl.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.gMapControl.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.gMapControl.ShowTileGridLines = false;
-            this.gMapControl.Size = new System.Drawing.Size(1013, 517);
+            this.gMapControl.Size = new System.Drawing.Size(1013, 589);
             this.gMapControl.TabIndex = 2;
             this.gMapControl.Zoom = 0D;
             this.gMapControl.OnMarkerClick += new GMap.NET.WindowsForms.MarkerClick(this.gMapControl_OnMarkerClick);
@@ -203,16 +204,16 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1074, 21);
+            this.guna2Panel1.Size = new System.Drawing.Size(1074, 26);
             this.guna2Panel1.TabIndex = 3;
             // 
             // ExitImages
             // 
             this.ExitImages.BackColor = System.Drawing.Color.Transparent;
             this.ExitImages.Image = global::AiroHelper.Properties.Resources.close_12484191;
-            this.ExitImages.Location = new System.Drawing.Point(1048, 0);
+            this.ExitImages.Location = new System.Drawing.Point(1042, 0);
             this.ExitImages.Name = "ExitImages";
-            this.ExitImages.Size = new System.Drawing.Size(27, 21);
+            this.ExitImages.Size = new System.Drawing.Size(33, 26);
             this.ExitImages.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ExitImages.TabIndex = 4;
             this.ExitImages.TabStop = false;
@@ -222,7 +223,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1074, 537);
+            this.ClientSize = new System.Drawing.Size(1074, 608);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.gMapControl);

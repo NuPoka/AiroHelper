@@ -44,13 +44,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.menuButton = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BackButton = new System.Windows.Forms.PictureBox();
             this.guna2Separator4 = new Guna.UI2.WinForms.Guna2Separator();
             this.PictureBoxLogReg = new Guna.UI2.WinForms.Guna2PictureBox();
             this.UserPanel = new System.Windows.Forms.Panel();
             this.labelNameUser = new System.Windows.Forms.Label();
             this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.PanelSeach = new System.Windows.Forms.Panel();
-            this.BackButton = new System.Windows.Forms.PictureBox();
             this.BtnSearch = new Guna.UI2.WinForms.Guna2PictureBox();
             this.TextBoxSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -60,10 +60,10 @@
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BackButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxLogReg)).BeginInit();
             this.UserPanel.SuspendLayout();
             this.PanelSeach.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BackButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnSearch)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,7 +88,7 @@
             this.guna2VSeparator11.FillColor = System.Drawing.Color.Black;
             this.guna2VSeparator11.Location = new System.Drawing.Point(213, 80);
             this.guna2VSeparator11.Name = "guna2VSeparator11";
-            this.guna2VSeparator11.Size = new System.Drawing.Size(10, 434);
+            this.guna2VSeparator11.Size = new System.Drawing.Size(10, 525);
             this.guna2VSeparator11.TabIndex = 7;
             // 
             // btnAeroport
@@ -253,12 +253,24 @@
             this.panel1.Size = new System.Drawing.Size(854, 80);
             this.panel1.TabIndex = 3;
             // 
+            // BackButton
+            // 
+            this.BackButton.Image = global::AiroHelper.Properties.Resources.left_chevron_12533347__2_;
+            this.BackButton.Location = new System.Drawing.Point(24, 23);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(32, 32);
+            this.BackButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.BackButton.TabIndex = 10;
+            this.BackButton.TabStop = false;
+            this.BackButton.Visible = false;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            // 
             // guna2Separator4
             // 
             this.guna2Separator4.FillColor = System.Drawing.Color.Black;
             this.guna2Separator4.Location = new System.Drawing.Point(0, 74);
             this.guna2Separator4.Name = "guna2Separator4";
-            this.guna2Separator4.Size = new System.Drawing.Size(837, 10);
+            this.guna2Separator4.Size = new System.Drawing.Size(851, 10);
             this.guna2Separator4.TabIndex = 6;
             // 
             // PictureBoxLogReg
@@ -311,18 +323,6 @@
             this.PanelSeach.Name = "PanelSeach";
             this.PanelSeach.Size = new System.Drawing.Size(276, 55);
             this.PanelSeach.TabIndex = 9;
-            // 
-            // BackButton
-            // 
-            this.BackButton.Image = global::AiroHelper.Properties.Resources.left_chevron_12533347__2_;
-            this.BackButton.Location = new System.Drawing.Point(24, 23);
-            this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(32, 32);
-            this.BackButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.BackButton.TabIndex = 10;
-            this.BackButton.TabStop = false;
-            this.BackButton.Visible = false;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // BtnSearch
             // 
@@ -383,6 +383,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AiroportsInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AiroportsInfo";
@@ -394,12 +395,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BackButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxLogReg)).EndInit();
             this.UserPanel.ResumeLayout(false);
             this.UserPanel.PerformLayout();
             this.PanelSeach.ResumeLayout(false);
             this.PanelSeach.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BackButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnSearch)).EndInit();
             this.ResumeLayout(false);
 

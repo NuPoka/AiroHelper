@@ -60,7 +60,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(866, 51);
+            this.panel1.Size = new System.Drawing.Size(850, 67);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -85,9 +85,9 @@
             this.panel2.Controls.Add(this.flowLayoutPanelUser);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.flowLayoutPanelAirprot);
-            this.panel2.Location = new System.Drawing.Point(0, 49);
+            this.panel2.Location = new System.Drawing.Point(0, 67);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(863, 396);
+            this.panel2.Size = new System.Drawing.Size(850, 453);
             this.panel2.TabIndex = 1;
             // 
             // label3
@@ -153,9 +153,9 @@
             this.labelCountUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelCountUser.Location = new System.Drawing.Point(60, 38);
             this.labelCountUser.Name = "labelCountUser";
-            this.labelCountUser.Size = new System.Drawing.Size(39, 42);
+            this.labelCountUser.Size = new System.Drawing.Size(81, 42);
             this.labelCountUser.TabIndex = 3;
-            this.labelCountUser.Text = "0";
+            this.labelCountUser.Text = "000";
             // 
             // guna2Separator2
             // 
@@ -200,9 +200,9 @@
             this.labelCountAirport.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelCountAirport.Location = new System.Drawing.Point(60, 38);
             this.labelCountAirport.Name = "labelCountAirport";
-            this.labelCountAirport.Size = new System.Drawing.Size(39, 42);
+            this.labelCountAirport.Size = new System.Drawing.Size(81, 42);
             this.labelCountAirport.TabIndex = 3;
-            this.labelCountAirport.Text = "0";
+            this.labelCountAirport.Text = "000";
             // 
             // guna2Separator1
             // 
@@ -247,7 +247,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "ListAdminUserControl";
-            this.Size = new System.Drawing.Size(866, 445);
+            this.Size = new System.Drawing.Size(850, 520);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
