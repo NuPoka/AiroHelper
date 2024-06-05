@@ -290,9 +290,9 @@
             // 
             this.UserPanel.Controls.Add(this.labelNameUser);
             this.UserPanel.Controls.Add(this.guna2Separator2);
-            this.UserPanel.Location = new System.Drawing.Point(505, 39);
+            this.UserPanel.Location = new System.Drawing.Point(505, 32);
             this.UserPanel.Name = "UserPanel";
-            this.UserPanel.Size = new System.Drawing.Size(249, 35);
+            this.UserPanel.Size = new System.Drawing.Size(249, 42);
             this.UserPanel.TabIndex = 8;
             this.UserPanel.Visible = false;
             // 
@@ -301,16 +301,15 @@
             this.labelNameUser.AutoSize = true;
             this.labelNameUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelNameUser.ForeColor = System.Drawing.Color.White;
-            this.labelNameUser.Location = new System.Drawing.Point(106, 0);
+            this.labelNameUser.Location = new System.Drawing.Point(98, 7);
             this.labelNameUser.Name = "labelNameUser";
             this.labelNameUser.Size = new System.Drawing.Size(51, 20);
             this.labelNameUser.TabIndex = 3;
             this.labelNameUser.Text = "Name";
-            this.labelNameUser.Visible = false;
             // 
             // guna2Separator2
             // 
-            this.guna2Separator2.Location = new System.Drawing.Point(30, 19);
+            this.guna2Separator2.Location = new System.Drawing.Point(25, 29);
             this.guna2Separator2.Name = "guna2Separator2";
             this.guna2Separator2.Size = new System.Drawing.Size(200, 10);
             this.guna2Separator2.TabIndex = 5;

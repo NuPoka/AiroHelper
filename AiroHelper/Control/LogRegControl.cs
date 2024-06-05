@@ -35,5 +35,10 @@ namespace AiroHelper
             regIn.Show();
             this.Hide();
         }
+
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -173,6 +173,16 @@ namespace AiroHelper.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logout256_24927 {
+            get {
+                object obj = ResourceManager.GetObject("logout256_24927", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap next_10238851 {
             get {
                 object obj = ResourceManager.GetObject("next_10238851", resourceCulture);

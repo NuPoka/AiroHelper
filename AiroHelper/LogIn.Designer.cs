@@ -243,7 +243,7 @@
             this.panelInfo.Controls.Add(this.pictureBox7);
             this.panelInfo.Location = new System.Drawing.Point(52, 259);
             this.panelInfo.Name = "panelInfo";
-            this.panelInfo.Size = new System.Drawing.Size(212, 26);
+            this.panelInfo.Size = new System.Drawing.Size(256, 26);
             this.panelInfo.TabIndex = 9;
             this.panelInfo.Visible = false;
             // 
@@ -302,7 +302,7 @@
             this.LoginT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.LoginT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.LoginT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.LoginT.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LoginT.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.LoginT.ForeColor = System.Drawing.Color.Black;
             this.LoginT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.LoginT.Location = new System.Drawing.Point(66, 157);

@@ -45,10 +45,15 @@ namespace AiroHelper
             get { return AdminPanel; }
             set { AdminPanel = value; }
         }
-        public Label PnlLableUser
+        public Label PnlLableUserText
         {
             get { return labelNameUser; }
             set { labelNameUser = value; }
+        }
+        public Panel PnlLableUser
+        {
+            get { return UserPanel; }
+            set { UserPanel = value; }
         }
         public Guna.UI2.WinForms.Guna2Panel pnlNif
         {
@@ -218,16 +223,19 @@ namespace AiroHelper
         private void PictureBoxLogReg_Click(object sender, EventArgs e)
         {
             LogRegControl userControl1 = new LogRegControl();
-            userControl1.Size = new Size(208, 139);
-            userControl1.Location = new Point(635, 0);
-            userControl1.panel1.Visible = true;
             PanelInfo.Controls.Add(userControl1);
+            if (labelNameUser.Text != "Name")
+            {
+                userControl1.panelLogReg.Visible = false;
+                userControl1.Size = new Size(208, 45);
+            }
+            userControl1.Location = new Point(635, 0);
             userControl1.BringToFront();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void BackButton_Click(object sender, EventArgs e)

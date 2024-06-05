@@ -210,7 +210,7 @@
             this.panelInfo.Controls.Add(this.pictureBox7);
             this.panelInfo.Location = new System.Drawing.Point(54, 264);
             this.panelInfo.Name = "panelInfo";
-            this.panelInfo.Size = new System.Drawing.Size(212, 26);
+            this.panelInfo.Size = new System.Drawing.Size(255, 26);
             this.panelInfo.TabIndex = 8;
             this.panelInfo.Visible = false;
             // 
@@ -374,6 +374,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::AiroHelper.Properties.Resources.airplane;
             this.pictureBox1.Location = new System.Drawing.Point(12, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(64, 64);

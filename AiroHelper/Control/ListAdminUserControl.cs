@@ -23,5 +23,10 @@ namespace AiroHelper
             adminPanel.Show();
             this.Hide();
         }
+
+        private void pictureBoxExit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
