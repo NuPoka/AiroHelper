@@ -108,6 +108,7 @@ namespace AiroHelper
                     airPorts.labelAdress.Text += reader[4].ToString();
                     airPorts.labelCompany.Text += reader[8].ToString();
                     airPorts.labelDesc.Text += reader[10].ToString();
+                    airPorts.lableRating.Text = reader[11].ToString();
                     byte[] Photo = (byte[])(reader[9]);
                     MemoryStream memoryStream = new MemoryStream(Photo);
                     airPorts.guna2PictureBox1.Image = Image.FromStream(memoryStream);
@@ -151,8 +152,6 @@ namespace AiroHelper
         }
         private void ExitImages_Click(object sender, EventArgs e)
         {
-            AiroportsInfo airoportsInfo = new AiroportsInfo();
-            airoportsInfo.Show();
             this.Close();
         }
     }

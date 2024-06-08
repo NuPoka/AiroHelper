@@ -495,7 +495,7 @@
             this.ShareBtn.Name = "ShareBtn";
             this.ShareBtn.Size = new System.Drawing.Size(176, 46);
             this.ShareBtn.TabIndex = 14;
-            this.ShareBtn.Text = "Выбрать cхему";
+            this.ShareBtn.Text = "Выбрать картинку";
             this.ShareBtn.UseTransparentBackground = true;
             this.ShareBtn.Click += new System.EventHandler(this.ShareBtn_Click);
             // 
@@ -599,7 +599,7 @@
             this.panelInfo.Controls.Add(this.pictureBox7);
             this.panelInfo.Location = new System.Drawing.Point(51, 496);
             this.panelInfo.Name = "panelInfo";
-            this.panelInfo.Size = new System.Drawing.Size(431, 26);
+            this.panelInfo.Size = new System.Drawing.Size(570, 26);
             this.panelInfo.TabIndex = 9;
             this.panelInfo.Visible = false;
             // 

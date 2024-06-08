@@ -80,7 +80,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 608);
+            this.panelMenu.Size = new System.Drawing.Size(220, 1034);
             this.panelMenu.TabIndex = 2;
             // 
             // guna2VSeparator11
@@ -88,7 +88,7 @@
             this.guna2VSeparator11.FillColor = System.Drawing.Color.Black;
             this.guna2VSeparator11.Location = new System.Drawing.Point(213, 80);
             this.guna2VSeparator11.Name = "guna2VSeparator11";
-            this.guna2VSeparator11.Size = new System.Drawing.Size(10, 525);
+            this.guna2VSeparator11.Size = new System.Drawing.Size(10, 954);
             this.guna2VSeparator11.TabIndex = 7;
             // 
             // btnAeroport
@@ -110,6 +110,7 @@
             this.btnAeroport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAeroport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAeroport.UseVisualStyleBackColor = true;
+            this.btnAeroport.Click += new System.EventHandler(this.btnAeroport_Click);
             // 
             // BtnMap
             // 
@@ -172,7 +173,7 @@
             // 
             // guna2Separator3
             // 
-            this.guna2Separator3.Location = new System.Drawing.Point(14, 538);
+            this.guna2Separator3.Location = new System.Drawing.Point(6, 958);
             this.guna2Separator3.Name = "guna2Separator3";
             this.guna2Separator3.Size = new System.Drawing.Size(200, 10);
             this.guna2Separator3.TabIndex = 6;
@@ -186,7 +187,7 @@
             this.btnExit.ForeColor = System.Drawing.Color.LightCyan;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 545);
+            this.btnExit.Location = new System.Drawing.Point(0, 974);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnExit.Size = new System.Drawing.Size(220, 60);
@@ -250,7 +251,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(220, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(854, 80);
+            this.panel1.Size = new System.Drawing.Size(932, 80);
             this.panel1.TabIndex = 3;
             // 
             // BackButton
@@ -270,7 +271,7 @@
             this.guna2Separator4.FillColor = System.Drawing.Color.Black;
             this.guna2Separator4.Location = new System.Drawing.Point(0, 74);
             this.guna2Separator4.Name = "guna2Separator4";
-            this.guna2Separator4.Size = new System.Drawing.Size(851, 10);
+            this.guna2Separator4.Size = new System.Drawing.Size(928, 10);
             this.guna2Separator4.TabIndex = 6;
             // 
             // PictureBoxLogReg
@@ -278,7 +279,7 @@
             this.PictureBoxLogReg.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxLogReg.Image = global::AiroHelper.Properties.Resources.user_172163;
             this.PictureBoxLogReg.ImageRotate = 0F;
-            this.PictureBoxLogReg.Location = new System.Drawing.Point(774, 3);
+            this.PictureBoxLogReg.Location = new System.Drawing.Point(856, 7);
             this.PictureBoxLogReg.Name = "PictureBoxLogReg";
             this.PictureBoxLogReg.Size = new System.Drawing.Size(64, 64);
             this.PictureBoxLogReg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -290,7 +291,7 @@
             // 
             this.UserPanel.Controls.Add(this.labelNameUser);
             this.UserPanel.Controls.Add(this.guna2Separator2);
-            this.UserPanel.Location = new System.Drawing.Point(505, 32);
+            this.UserPanel.Location = new System.Drawing.Point(601, 32);
             this.UserPanel.Name = "UserPanel";
             this.UserPanel.Size = new System.Drawing.Size(249, 42);
             this.UserPanel.TabIndex = 8;
@@ -370,14 +371,14 @@
             this.PanelInfo.BackColor = System.Drawing.Color.LightSteelBlue;
             this.PanelInfo.Location = new System.Drawing.Point(220, 80);
             this.PanelInfo.Name = "PanelInfo";
-            this.PanelInfo.Size = new System.Drawing.Size(853, 528);
+            this.PanelInfo.Size = new System.Drawing.Size(931, 955);
             this.PanelInfo.TabIndex = 4;
             // 
             // AiroportsInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1074, 608);
+            this.ClientSize = new System.Drawing.Size(1152, 1034);
             this.Controls.Add(this.PanelInfo);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelMenu);

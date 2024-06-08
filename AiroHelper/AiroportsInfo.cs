@@ -114,7 +114,7 @@ namespace AiroHelper
         {
             ListAdminUserControl admin = new ListAdminUserControl();
             admin.Location = new Point(220, 80);
-            admin.Size = new Size(866, 535);
+            admin.Size = new Size(912, 520);
             this.Controls.Add(admin);
             admin.BringToFront();
 
@@ -240,9 +240,20 @@ namespace AiroHelper
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            AiroportsInfo airoports = new AiroportsInfo();
-            airoports.Show();
-            this.Hide();
+            PanelSeach.Location = new Point(24, 12);
+            PanelInfo.Controls.RemoveAt(0);
+            BackButton.Visible = false;
+        }
+
+        private void btnAeroport_Click(object sender, EventArgs e)
+        {
+            _obj = this;
+            if (PanelInfo.Controls.Count > 0)
+                PanelInfo.Controls.RemoveAt(0);
+            FlowLayoutPanelForListAirportControler userListControl = new FlowLayoutPanelForListAirportControler();
+            PanelInfo.Controls.Add(userListControl);
+            userListControl.BringToFront();
+            PrintListAirport(userListControl);
         }
     }
 }

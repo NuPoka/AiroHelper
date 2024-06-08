@@ -53,7 +53,7 @@
             this.PanelPulcovo.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelPulcovo.Location = new System.Drawing.Point(0, 0);
             this.PanelPulcovo.Name = "PanelPulcovo";
-            this.PanelPulcovo.Size = new System.Drawing.Size(830, 100);
+            this.PanelPulcovo.Size = new System.Drawing.Size(895, 100);
             this.PanelPulcovo.TabIndex = 1;
             // 
             // BtnAirport
@@ -72,7 +72,7 @@
             this.BtnAirport.Image = global::AiroHelper.Properties.Resources.next_10238851;
             this.BtnAirport.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.BtnAirport.IndicateFocus = true;
-            this.BtnAirport.Location = new System.Drawing.Point(675, 19);
+            this.BtnAirport.Location = new System.Drawing.Point(734, 19);
             this.BtnAirport.Name = "BtnAirport";
             this.BtnAirport.Size = new System.Drawing.Size(139, 62);
             this.BtnAirport.TabIndex = 5;
@@ -87,7 +87,7 @@
             this.guna2PanelDesc.Controls.Add(this.labelDesc);
             this.guna2PanelDesc.Location = new System.Drawing.Point(133, 19);
             this.guna2PanelDesc.Name = "guna2PanelDesc";
-            this.guna2PanelDesc.Size = new System.Drawing.Size(532, 62);
+            this.guna2PanelDesc.Size = new System.Drawing.Size(560, 62);
             this.guna2PanelDesc.TabIndex = 5;
             // 
             // labelDesc
@@ -97,7 +97,7 @@
             this.labelDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelDesc.Location = new System.Drawing.Point(3, 0);
             this.labelDesc.Name = "labelDesc";
-            this.labelDesc.Size = new System.Drawing.Size(529, 62);
+            this.labelDesc.Size = new System.Drawing.Size(554, 62);
             this.labelDesc.TabIndex = 0;
             this.labelDesc.Text = "Опись";
             // 
@@ -144,7 +144,7 @@
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.Controls.Add(this.PanelPulcovo);
             this.Name = "AirportListMiniControl";
-            this.Size = new System.Drawing.Size(830, 100);
+            this.Size = new System.Drawing.Size(895, 100);
             this.PanelPulcovo.ResumeLayout(false);
             this.guna2PanelDesc.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxListAirport)).EndInit();
