@@ -19,18 +19,19 @@ namespace AiroHelper
     {
         DataBase dataBase = new DataBase();
 
-        public AirportListMiniControl(Image airportImage, string airportDescription)
+        public AirportListMiniControl(Image airportImage, string airportDescription, string aidi)
         {
             InitializeComponent();
             PictureBoxListAirport.Image = airportImage;
             labelDesc.Text = airportDescription;
+            labelNameM.Text = aidi;
         }
         private void BtnAirport_Click(object sender, EventArgs e)
         {
             try
             {
                 dataBase.OpenConnection();
-                SqlCommand command = new SqlCommand("SELECT * FROM [Airoports] WHERE Airoport_Description='" + this.labelDesc.Text + "'", dataBase.GetConnection());
+                SqlCommand command = new SqlCommand("SELECT * FROM [Airoports] WHERE Airoport_Name='" + this.labelNameM.Text + "'", dataBase.GetConnection());
                 SqlDataReader reader = command.ExecuteReader();
 
                 AirPortsControl airPorts = new AirPortsControl();
@@ -53,14 +54,15 @@ namespace AiroHelper
                 while (reader.Read())
                 {
                     //информация
+                    airPorts.labelId.Text = reader[0].ToString(); // номер
                     airPorts.labelName.Text = reader[1].ToString(); //название
-                    airPorts.labelCode.Text = reader[2].ToString(); // код
+                    airPorts.labelCode.Text += reader[2].ToString(); // код
                     airPorts.labelCity.Text += reader[3].ToString(); //город
                     airPorts.labelAdress.Text += reader[4].ToString(); //адрес
                     airPorts.labelCompany.Text += reader[8].ToString(); //компания
-                    airPorts.labelDesc.Text += reader[10].ToString(); //описание
+                    airPorts.labelDesc.Text = reader[10].ToString(); //описание
 
-           
+
                 }
 
                 airPorts.Dock = DockStyle.Fill;

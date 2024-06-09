@@ -37,7 +37,7 @@
             this.flowLayoutPanelAirPort.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanelAirPort.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanelAirPort.Name = "flowLayoutPanelAirPort";
-            this.flowLayoutPanelAirPort.Size = new System.Drawing.Size(931, 955);
+            this.flowLayoutPanelAirPort.Size = new System.Drawing.Size(931, 694);
             this.flowLayoutPanelAirPort.TabIndex = 0;
             // 
             // FlowLayoutPanelForListAirportControler
@@ -46,7 +46,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.flowLayoutPanelAirPort);
             this.Name = "FlowLayoutPanelForListAirportControler";
-            this.Size = new System.Drawing.Size(931, 955);
+            this.Size = new System.Drawing.Size(931, 694);
             this.ResumeLayout(false);
 
         }

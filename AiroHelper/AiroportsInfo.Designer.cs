@@ -80,7 +80,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 1034);
+            this.panelMenu.Size = new System.Drawing.Size(220, 774);
             this.panelMenu.TabIndex = 2;
             // 
             // guna2VSeparator11
@@ -173,7 +173,7 @@
             // 
             // guna2Separator3
             // 
-            this.guna2Separator3.Location = new System.Drawing.Point(6, 958);
+            this.guna2Separator3.Location = new System.Drawing.Point(12, 695);
             this.guna2Separator3.Name = "guna2Separator3";
             this.guna2Separator3.Size = new System.Drawing.Size(200, 10);
             this.guna2Separator3.TabIndex = 6;
@@ -187,7 +187,7 @@
             this.btnExit.ForeColor = System.Drawing.Color.LightCyan;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 974);
+            this.btnExit.Location = new System.Drawing.Point(0, 711);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnExit.Size = new System.Drawing.Size(220, 60);
@@ -371,14 +371,14 @@
             this.PanelInfo.BackColor = System.Drawing.Color.LightSteelBlue;
             this.PanelInfo.Location = new System.Drawing.Point(220, 80);
             this.PanelInfo.Name = "PanelInfo";
-            this.PanelInfo.Size = new System.Drawing.Size(931, 955);
+            this.PanelInfo.Size = new System.Drawing.Size(931, 694);
             this.PanelInfo.TabIndex = 4;
             // 
             // AiroportsInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1152, 1034);
+            this.ClientSize = new System.Drawing.Size(1152, 774);
             this.Controls.Add(this.PanelInfo);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelMenu);

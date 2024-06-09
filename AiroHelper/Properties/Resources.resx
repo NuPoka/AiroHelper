@@ -121,6 +121,9 @@
   <data name="left-chevron_12533347 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\left-chevron_12533347 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="search_15987732" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_15987732.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -129,9 +132,6 @@
   </data>
   <data name="user_8407895" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_8407895.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="innovation_1388014 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\innovation_1388014 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="facebook_3670032" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\facebook_3670032.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,14 +154,20 @@
   <data name="airplane" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\airplane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="close_12484191" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close_12484191.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="social_10091605" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\social_10091605.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="close_12484191" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_12484191.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="innovation_1388014 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\innovation_1388014 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logout256_24927" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logout256_24927.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bus-stop_1661962" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bus-stop_1661962.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="google-symbol_2875404" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\google-symbol_2875404.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,16 +178,19 @@
   <data name="add_11018427" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add_11018427.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="favorites_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\favorites_black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="user_172163" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_172163.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="twitter_3670151" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\twitter_3670151.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search_15987732" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search_15987732.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="taxi_1661993" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\taxi_1661993.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="favorites_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\favorites_black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="car_5946028" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\car_5946028.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.PanelPulcovo = new Guna.UI2.WinForms.Guna2Panel();
+            this.labelNameM = new System.Windows.Forms.Label();
             this.BtnAirport = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PanelDesc = new Guna.UI2.WinForms.Guna2Panel();
             this.labelDesc = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -46,6 +47,7 @@
             // PanelPulcovo
             // 
             this.PanelPulcovo.BackColor = System.Drawing.Color.GhostWhite;
+            this.PanelPulcovo.Controls.Add(this.labelNameM);
             this.PanelPulcovo.Controls.Add(this.BtnAirport);
             this.PanelPulcovo.Controls.Add(this.guna2PanelDesc);
             this.PanelPulcovo.Controls.Add(this.guna2VSeparator4);
@@ -55,6 +57,15 @@
             this.PanelPulcovo.Name = "PanelPulcovo";
             this.PanelPulcovo.Size = new System.Drawing.Size(895, 100);
             this.PanelPulcovo.TabIndex = 1;
+            // 
+            // labelNameM
+            // 
+            this.labelNameM.AutoSize = true;
+            this.labelNameM.Location = new System.Drawing.Point(4, 3);
+            this.labelNameM.Name = "labelNameM";
+            this.labelNameM.Size = new System.Drawing.Size(15, 13);
+            this.labelNameM.TabIndex = 6;
+            this.labelNameM.Text = "id";
             // 
             // BtnAirport
             // 
@@ -146,6 +157,7 @@
             this.Name = "AirportListMiniControl";
             this.Size = new System.Drawing.Size(895, 100);
             this.PanelPulcovo.ResumeLayout(false);
+            this.PanelPulcovo.PerformLayout();
             this.guna2PanelDesc.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxListAirport)).EndInit();
             this.ResumeLayout(false);
@@ -163,5 +175,6 @@
         public Guna.UI2.WinForms.Guna2HtmlLabel labelDesc;
         public Guna.UI2.WinForms.Guna2CirclePictureBox PictureBoxListAirport;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        public System.Windows.Forms.Label labelNameM;
     }
 }

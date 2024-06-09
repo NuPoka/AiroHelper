@@ -143,6 +143,12 @@
     <Compile Include="Control\MiniControl\ListUserMiniControler.Designer.cs">
       <DependentUpon>ListUserMiniControler.cs</DependentUpon>
     </Compile>
+    <Compile Include="Control\MiniControl\TransportMControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\MiniControl\TransportMControl.Designer.cs">
+      <DependentUpon>TransportMControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Control\RoadControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -205,6 +211,9 @@
     <EmbeddedResource Include="Control\MiniControl\ListUserMiniControler.resx">
       <DependentUpon>ListUserMiniControler.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Control\MiniControl\TransportMControl.resx">
+      <DependentUpon>TransportMControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Control\RoadControl.resx">
       <DependentUpon>RoadControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,7 +239,6 @@
     <EmbeddedResource Include="RegIn.resx">
       <DependentUpon>RegIn.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -310,6 +318,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\favorites_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taxi_1661993.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bus-stop_1661962.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car_5946028.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

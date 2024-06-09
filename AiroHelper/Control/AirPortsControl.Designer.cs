@@ -66,6 +66,7 @@
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.labelDesc = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.labelId = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -79,6 +80,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.guna2Panel1.Controls.Add(this.labelId);
             this.guna2Panel1.Controls.Add(this.BtnRoad);
             this.guna2Panel1.Controls.Add(this.guna2VSeparator2);
             this.guna2Panel1.Controls.Add(this.guna2Separator5);
@@ -153,7 +155,7 @@
             // 
             this.guna2Separator4.Location = new System.Drawing.Point(216, 186);
             this.guna2Separator4.Name = "guna2Separator4";
-            this.guna2Separator4.Size = new System.Drawing.Size(158, 10);
+            this.guna2Separator4.Size = new System.Drawing.Size(312, 10);
             this.guna2Separator4.TabIndex = 13;
             // 
             // guna2Separator3
@@ -278,7 +280,7 @@
             this.labelName.AutoSize = true;
             this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelName.ForeColor = System.Drawing.Color.White;
-            this.labelName.Location = new System.Drawing.Point(212, 12);
+            this.labelName.Location = new System.Drawing.Point(250, 11);
             this.labelName.Name = "labelName";
             this.labelName.Size = new System.Drawing.Size(97, 24);
             this.labelName.TabIndex = 1;
@@ -316,7 +318,7 @@
             this.guna2Panel2.Controls.Add(this.guna2Panel3);
             this.guna2Panel2.Location = new System.Drawing.Point(0, 221);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(931, 734);
+            this.guna2Panel2.Size = new System.Drawing.Size(931, 474);
             this.guna2Panel2.TabIndex = 1;
             // 
             // label9
@@ -493,6 +495,15 @@
             this.guna2Elipse1.BorderRadius = 35;
             this.guna2Elipse1.TargetControl = this.guna2Panel3;
             // 
+            // labelId
+            // 
+            this.labelId.AutoSize = true;
+            this.labelId.Location = new System.Drawing.Point(216, 16);
+            this.labelId.Name = "labelId";
+            this.labelId.Size = new System.Drawing.Size(13, 13);
+            this.labelId.TabIndex = 17;
+            this.labelId.Text = "1";
+            // 
             // AirPortsControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -500,7 +511,7 @@
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.Name = "AirPortsControl";
-            this.Size = new System.Drawing.Size(931, 955);
+            this.Size = new System.Drawing.Size(931, 694);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
@@ -554,5 +565,6 @@
         private System.Windows.Forms.Label label4;
         public System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label labelId;
     }
 }

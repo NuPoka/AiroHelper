@@ -83,6 +83,7 @@ namespace AiroHelper
                         {
                             byte[] photo = (byte[])(reader["Airoport_Map_Image"]);
                             string airportDescription = reader["Airoport_Description"].ToString();
+                            string aidi = reader["Airoport_Name"].ToString();
                             Image airportImage = null;
                             if (photo != null && photo.Length > 0)
                             {
@@ -93,7 +94,7 @@ namespace AiroHelper
                             }
 
                             // Создаем пользовательский элемент управления для отображения отдельного результата
-                            var resultControl = new AirportListMiniControl(airportImage, airportDescription);
+                            var resultControl = new AirportListMiniControl(airportImage, airportDescription, aidi);
 
                             // Добавляем элемент управления в FlowLayoutPanel внутри UserListAirportControl
                             userListControl.flowLayoutPanelAirPort.Controls.Add(resultControl);
@@ -176,7 +177,7 @@ namespace AiroHelper
         {
 
             dataBase.OpenConnection();
-            SqlCommand command = new SqlCommand("SELECT * FROM Airoports", dataBase.GetConnection());
+            SqlCommand command = new SqlCommand("SELECT * FROM [Airoports]", dataBase.GetConnection());
             SqlDataReader reader = command.ExecuteReader();
 
             while (reader.Read())
@@ -188,12 +189,12 @@ namespace AiroHelper
                     MemoryStream memoryStream = new MemoryStream(photo);
                     Image airportImage = Image.FromStream(memoryStream);
                     string description = reader[7].ToString();
+                    string aidi = reader[1].ToString();
 
                     // Создаем элемент управления и устанавливаем изображение и описание
-                    AirportListMiniControl item = new AirportListMiniControl(airportImage, description);
+                    AirportListMiniControl item = new AirportListMiniControl(airportImage, description, aidi);
 
                     UserListControl.flowLayoutPanelAirPort.Controls.Add(item);
-
                 }
             }
             reader.Close();
@@ -229,7 +230,7 @@ namespace AiroHelper
                 userControl1.panelLogReg.Visible = false;
                 userControl1.Size = new Size(208, 45);
             }
-            userControl1.Location = new Point(635, 0);
+            userControl1.Location = new Point(700, 0);
             userControl1.BringToFront();
         }
 
