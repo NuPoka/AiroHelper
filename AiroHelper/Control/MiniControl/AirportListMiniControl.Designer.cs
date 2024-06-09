@@ -55,7 +55,7 @@
             this.PanelPulcovo.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelPulcovo.Location = new System.Drawing.Point(0, 0);
             this.PanelPulcovo.Name = "PanelPulcovo";
-            this.PanelPulcovo.Size = new System.Drawing.Size(895, 100);
+            this.PanelPulcovo.Size = new System.Drawing.Size(929, 100);
             this.PanelPulcovo.TabIndex = 1;
             // 
             // labelNameM
@@ -83,7 +83,7 @@
             this.BtnAirport.Image = global::AiroHelper.Properties.Resources.next_10238851;
             this.BtnAirport.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.BtnAirport.IndicateFocus = true;
-            this.BtnAirport.Location = new System.Drawing.Point(734, 19);
+            this.BtnAirport.Location = new System.Drawing.Point(767, 19);
             this.BtnAirport.Name = "BtnAirport";
             this.BtnAirport.Size = new System.Drawing.Size(139, 62);
             this.BtnAirport.TabIndex = 5;
@@ -155,7 +155,7 @@
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.Controls.Add(this.PanelPulcovo);
             this.Name = "AirportListMiniControl";
-            this.Size = new System.Drawing.Size(895, 100);
+            this.Size = new System.Drawing.Size(929, 100);
             this.PanelPulcovo.ResumeLayout(false);
             this.PanelPulcovo.PerformLayout();
             this.guna2PanelDesc.ResumeLayout(false);

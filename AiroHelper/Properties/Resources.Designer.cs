@@ -63,6 +63,16 @@ namespace AiroHelper.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5_stars_5126509 {
+            get {
+                object obj = ResourceManager.GetObject("5-stars_5126509", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add_11018427 {
             get {
                 object obj = ResourceManager.GetObject("add_11018427", resourceCulture);
@@ -93,9 +103,59 @@ namespace AiroHelper.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap atm_1551777 {
+            get {
+                object obj = ResourceManager.GetObject("atm_1551777", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap booking_5776488 {
+            get {
+                object obj = ResourceManager.GetObject("booking_5776488", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bus_stop_1661962 {
             get {
                 object obj = ResourceManager.GetObject("bus-stop_1661962", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap business_15676366 {
+            get {
+                object obj = ResourceManager.GetObject("business_15676366", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap business_class_2819868 {
+            get {
+                object obj = ResourceManager.GetObject("business-class_2819868", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cafe_3775583 {
+            get {
+                object obj = ResourceManager.GetObject("cafe_3775583", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,6 +243,16 @@ namespace AiroHelper.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hospital_location_16361855 {
+            get {
+                object obj = ResourceManager.GetObject("hospital-location_16361855", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap innovation_1388014__1_ {
             get {
                 object obj = ResourceManager.GetObject("innovation_1388014 (1)", resourceCulture);
@@ -223,9 +293,29 @@ namespace AiroHelper.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap luggage_563759 {
+            get {
+                object obj = ResourceManager.GetObject("luggage_563759", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap next_10238851 {
             get {
                 object obj = ResourceManager.GetObject("next_10238851", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap payment_11187675 {
+            get {
+                object obj = ResourceManager.GetObject("payment_11187675", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,6 +343,26 @@ namespace AiroHelper.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap search_9681932 {
+            get {
+                object obj = ResourceManager.GetObject("search_9681932", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap signboard_9836234 {
+            get {
+                object obj = ResourceManager.GetObject("signboard_9836234", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap social_10091605 {
             get {
                 object obj = ResourceManager.GetObject("social_10091605", resourceCulture);
@@ -263,9 +373,39 @@ namespace AiroHelper.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap store_869636 {
+            get {
+                object obj = ResourceManager.GetObject("store_869636", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap taxi_1661993 {
             get {
                 object obj = ResourceManager.GetObject("taxi_1661993", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap timer_3833323 {
+            get {
+                object obj = ResourceManager.GetObject("timer_3833323", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trade_4558779 {
+            get {
+                object obj = ResourceManager.GetObject("trade_4558779", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -306,6 +446,16 @@ namespace AiroHelper.Properties {
         internal static System.Drawing.Bitmap user_8407895 {
             get {
                 object obj = ResourceManager.GetObject("user_8407895", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vip_room_5079966 {
+            get {
+                object obj = ResourceManager.GetObject("vip-room_5079966", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

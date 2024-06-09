@@ -328,6 +328,51 @@
   <ItemGroup>
     <None Include="Resources\car_5946028.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luggage_563759.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_9681932.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store_869636.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cafe_3775583.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\booking_5776488.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment_11187675.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timer_3833323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-class_2819868.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5-stars_5126509.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signboard_9836234.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vip-room_5079966.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_15676366.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atm_1551777.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trade_4558779.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital-location_16361855.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

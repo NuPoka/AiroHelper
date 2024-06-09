@@ -251,7 +251,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(220, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(932, 80);
+            this.panel1.Size = new System.Drawing.Size(966, 80);
             this.panel1.TabIndex = 3;
             // 
             // BackButton
@@ -279,7 +279,7 @@
             this.PictureBoxLogReg.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureBoxLogReg.Image = global::AiroHelper.Properties.Resources.user_172163;
             this.PictureBoxLogReg.ImageRotate = 0F;
-            this.PictureBoxLogReg.Location = new System.Drawing.Point(856, 7);
+            this.PictureBoxLogReg.Location = new System.Drawing.Point(890, 7);
             this.PictureBoxLogReg.Name = "PictureBoxLogReg";
             this.PictureBoxLogReg.Size = new System.Drawing.Size(64, 64);
             this.PictureBoxLogReg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -291,7 +291,7 @@
             // 
             this.UserPanel.Controls.Add(this.labelNameUser);
             this.UserPanel.Controls.Add(this.guna2Separator2);
-            this.UserPanel.Location = new System.Drawing.Point(601, 32);
+            this.UserPanel.Location = new System.Drawing.Point(635, 32);
             this.UserPanel.Name = "UserPanel";
             this.UserPanel.Size = new System.Drawing.Size(249, 42);
             this.UserPanel.TabIndex = 8;
@@ -371,14 +371,14 @@
             this.PanelInfo.BackColor = System.Drawing.Color.LightSteelBlue;
             this.PanelInfo.Location = new System.Drawing.Point(220, 80);
             this.PanelInfo.Name = "PanelInfo";
-            this.PanelInfo.Size = new System.Drawing.Size(931, 694);
+            this.PanelInfo.Size = new System.Drawing.Size(966, 694);
             this.PanelInfo.TabIndex = 4;
             // 
             // AiroportsInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1152, 774);
+            this.ClientSize = new System.Drawing.Size(1186, 774);
             this.Controls.Add(this.PanelInfo);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelMenu);
