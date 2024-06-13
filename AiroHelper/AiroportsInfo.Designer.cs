@@ -55,6 +55,7 @@
             this.TextBoxSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.PanelInfo = new Guna.UI2.WinForms.Guna2Panel();
+            this.BtnUser = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.AdminPanel.SuspendLayout();
             this.panelLogo.SuspendLayout();
@@ -71,8 +72,9 @@
             // 
             this.panelMenu.BackColor = System.Drawing.Color.SlateBlue;
             this.panelMenu.Controls.Add(this.guna2VSeparator11);
-            this.panelMenu.Controls.Add(this.btnAeroport);
             this.panelMenu.Controls.Add(this.BtnMap);
+            this.panelMenu.Controls.Add(this.btnAeroport);
+            this.panelMenu.Controls.Add(this.BtnUser);
             this.panelMenu.Controls.Add(this.AdminPanel);
             this.panelMenu.Controls.Add(this.guna2Separator3);
             this.panelMenu.Controls.Add(this.btnExit);
@@ -122,7 +124,7 @@
             this.BtnMap.ForeColor = System.Drawing.Color.LightCyan;
             this.BtnMap.Image = ((System.Drawing.Image)(resources.GetObject("BtnMap.Image")));
             this.BtnMap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnMap.Location = new System.Drawing.Point(0, 158);
+            this.BtnMap.Location = new System.Drawing.Point(0, 278);
             this.BtnMap.Name = "BtnMap";
             this.BtnMap.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.BtnMap.Size = new System.Drawing.Size(220, 60);
@@ -354,6 +356,7 @@
             this.TextBoxSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBoxSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBoxSearch.Location = new System.Drawing.Point(0, 11);
+            this.TextBoxSearch.MaxLength = 50;
             this.TextBoxSearch.Name = "TextBoxSearch";
             this.TextBoxSearch.PasswordChar = '\0';
             this.TextBoxSearch.PlaceholderText = "Поиск аэропорта";
@@ -373,6 +376,27 @@
             this.PanelInfo.Name = "PanelInfo";
             this.PanelInfo.Size = new System.Drawing.Size(966, 694);
             this.PanelInfo.TabIndex = 4;
+            // 
+            // BtnUser
+            // 
+            this.BtnUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnUser.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnUser.FlatAppearance.BorderSize = 0;
+            this.BtnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.BtnUser.ForeColor = System.Drawing.Color.LightCyan;
+            this.BtnUser.Image = ((System.Drawing.Image)(resources.GetObject("BtnUser.Image")));
+            this.BtnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnUser.Location = new System.Drawing.Point(0, 158);
+            this.BtnUser.Name = "BtnUser";
+            this.BtnUser.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.BtnUser.Size = new System.Drawing.Size(220, 60);
+            this.BtnUser.TabIndex = 9;
+            this.BtnUser.Text = "  Профиль";
+            this.BtnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnUser.UseVisualStyleBackColor = true;
+            this.BtnUser.Click += new System.EventHandler(this.BtnUser_Click);
             // 
             // AiroportsInfo
             // 
@@ -433,5 +457,6 @@
         private System.Windows.Forms.Panel UserPanel;
         private System.Windows.Forms.Panel PanelSeach;
         public System.Windows.Forms.PictureBox BackButton;
+        private System.Windows.Forms.Button BtnUser;
     }
 }

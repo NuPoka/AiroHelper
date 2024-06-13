@@ -102,6 +102,7 @@ namespace AiroHelper
             {
                 if (LoginT.Text == "admin") { AiroportsInfo.Instance.pnlAdmin.Visible = true; }
                 AiroportsInfo.Instance.PnlLableUserText.Text = LoginT.Text;
+                DataBank.LoginUser = LoginT.Text;
                 AiroportsInfo.Instance.PnlLableUser.Visible = true;
                 AiroportsInfo.Instance.Show();
                 this.Hide();

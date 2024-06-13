@@ -198,8 +198,6 @@ namespace AiroHelper
         }
         private void TextBoxCoorditik_TextChanged(object sender, EventArgs e)
         {
-            // Паттерн для координат: "59.800029, 30.273193"
-            string pattern = @"^-?\d{1,2}(\.\d{0,6})?,\s?-?\d{1,3}(\.\d{0,6})?$";
 
             // Получаем текущий текст из текстового поля
             string text = TextBoxCoorditik_X.Text;
@@ -230,8 +228,6 @@ namespace AiroHelper
         }
         private void TextBoxCoorditik_Y_TextChanged(object sender, EventArgs e)
         {
-            // Паттерн для координат: "59.800029, 30.273193"
-            string pattern = @"^-?\d{1,2}(\.\d{0,6})?,\s?-?\d{1,3}(\.\d{0,6})?$";
 
             // Получаем текущий текст из текстового поля
             string text = TextBoxCoorditik_Y.Text;
@@ -310,7 +306,7 @@ namespace AiroHelper
                     MessageBox.Show("Пожалуйста, заполните все поля.");
                     return;
                 }
-                
+
                 dataBase.OpenConnection();
                 MemoryStream memoryStream = new MemoryStream();
                 SharePictureBox.Image.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Png);
@@ -319,15 +315,33 @@ namespace AiroHelper
                 memoryStream.Position = 0;
                 memoryStream.Read(Photo, 0, Photo.Length);
 
-                SqlCommand command = new SqlCommand("INSERT INTO Airoports (Airoport_Name, Airoport_Code, Airoport_City, Airoport_Аddress, Airoport_Location_x, Airoport_Location_y, Airoport_Company, Airoport_Map_Image, Airoport_Description) VALUES ('" + TextBoxName.Text + "', '" + limitedTextBox.Text + "', '" + ComboBoxCity.Text + "', '" + AdressTextBox.Text + "', '" + TextBoxCoorditik_X.Text + "', '" + TextBoxCoorditik_Y.Text + "', '" + TextBoxCompany.Text + "', @photo, '" + TextBoxDescription.Text + "')", dataBase.GetConnection());
-                command.Parameters.AddWithValue("@photo", Photo);
+                SqlCommand command = new SqlCommand(
+                    "INSERT INTO Airoports (Airoport_Name, Airoport_Code, Airoport_City, Airoport_Аddress, Airoport_Location_x, Airoport_Location_y, Airoport_Company, Airoport_Map_Image, Airoport_Description) " +
+                    "OUTPUT INSERTED.Id_Airoport " +
+                    "VALUES (@name, @code, @city, @address, @location_x, @location_y, @company, @photo, @description)",
+                    dataBase.GetConnection()
+                );
 
-                command.ExecuteNonQuery();
+                command.Parameters.AddWithValue("@name", TextBoxName.Text);
+                command.Parameters.AddWithValue("@code", limitedTextBox.Text);
+                command.Parameters.AddWithValue("@city", ComboBoxCity.Text);
+                command.Parameters.AddWithValue("@address", AdressTextBox.Text);
+                command.Parameters.AddWithValue("@location_x", TextBoxCoorditik_X.Text);
+                command.Parameters.AddWithValue("@location_y", TextBoxCoorditik_Y.Text);
+                command.Parameters.AddWithValue("@company", TextBoxCompany.Text);
+                command.Parameters.AddWithValue("@photo", Photo);
+                command.Parameters.AddWithValue("@description", TextBoxDescription.Text);
+
+                int newAirportId = (int)command.ExecuteScalar();
                 dataBase.CloseConnection();
 
                 MessageBox.Show("Аэропорт был успешно добавлен");
+
+                // Открытие другой формы и передача ID
+                Schema schemafrom = new Schema(newAirportId);
+                schemafrom.Show();
+
                 this.Close();
-                
             }
             catch (Exception ex)
             {

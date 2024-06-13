@@ -15,12 +15,13 @@ using System.Windows.Forms;
 
 namespace AiroHelper
 {
-    public partial class Form1 : Form
+    public partial class Schema : Form
     {
         DataBase dataBase = new DataBase();
-        public Form1()
+        public Schema(int airportId)
         {
             InitializeComponent();
+            guna2TextBox1.Text = airportId.ToString();
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

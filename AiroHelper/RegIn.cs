@@ -91,7 +91,7 @@ namespace AiroHelper
 
             if (command.ExecuteNonQuery() == 1)
             {
-                AiroportsInfo airoportsInfo = new AiroportsInfo();
+                LogIn airoportsInfo = new LogIn();
                 airoportsInfo.Show();
                 this.Hide();
             }

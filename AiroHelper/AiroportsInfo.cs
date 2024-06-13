@@ -92,15 +92,9 @@ namespace AiroHelper
                                     airportImage = Image.FromStream(memoryStream);
                                 }
                             }
-
-                            // Создаем пользовательский элемент управления для отображения отдельного результата
                             var resultControl = new AirportListMiniControl(airportImage, airportDescription, aidi);
-
-                            // Добавляем элемент управления в FlowLayoutPanel внутри UserListAirportControl
                             userListControl.flowLayoutPanelAirPort.Controls.Add(resultControl);
                         }
-
-                        // Добавляем UserListAirportControl в основную панель
                         PanelInfo.Controls.Add(userListControl);
                     }
                 }
@@ -115,7 +109,7 @@ namespace AiroHelper
         {
             ListAdminUserControl admin = new ListAdminUserControl();
             admin.Location = new Point(220, 80);
-            admin.Size = new Size(912, 520);
+            admin.Size = new Size(963, 780);
             this.Controls.Add(admin);
             admin.BringToFront();
 
@@ -135,15 +129,29 @@ namespace AiroHelper
             while (reader.Read())
             {
                 ListAirportMiniControler Item = new ListAirportMiniControler();
-                byte[] Photo = (byte[])(reader[9]);
-                MemoryStream memoryStream = new MemoryStream(Photo);
-                Item.PictureBoxAirports.Image = Image.FromStream(memoryStream);
-                Item.labelName.Text = reader[1].ToString();
-                Item.labelCode.Text = reader[2].ToString();
-                Item.labelCity.Text = reader[3].ToString();
+                if (!reader.IsDBNull(9))
+                {
+                    try
+                    {
+                        byte[] Photo = (byte[])(reader[9]);
+                        MemoryStream memoryStream = new MemoryStream(Photo);
+                        {
+                            Item.PictureBoxAirports.Image = Image.FromStream(memoryStream);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        // Логирование ошибки (если необходимо)
+                        Console.WriteLine("Ошибка при загрузке изображения: " + ex.Message);
+                    }
+                    Item.labelIDMC.Text = reader["Id_Airoport"].ToString();
+                    Item.labelName.Text = reader[1].ToString();
+                    Item.labelCode.Text = reader[2].ToString();
+                    Item.labelCity.Text = reader[3].ToString();
 
-                admin.flowLayoutPanelAirprot.Controls.Add(Item);
-                AirportCount++;
+                    admin.flowLayoutPanelAirprot.Controls.Add(Item);
+                    AirportCount++;
+                }
             }
             reader.Close();
             dataBase.CloseConnection();
@@ -230,7 +238,7 @@ namespace AiroHelper
                 userControl1.panelLogReg.Visible = false;
                 userControl1.Size = new Size(208, 45);
             }
-            userControl1.Location = new Point(700, 0);
+            userControl1.Location = new Point(750, 0);
             userControl1.BringToFront();
         }
 
@@ -255,6 +263,12 @@ namespace AiroHelper
             PanelInfo.Controls.Add(userListControl);
             userListControl.BringToFront();
             PrintListAirport(userListControl);
+        }
+
+        private void BtnUser_Click(object sender, EventArgs e)
+        {
+            UserPanel userpanel = new UserPanel();
+            userpanel.Show();
         }
     }
 }

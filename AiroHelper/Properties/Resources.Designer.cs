@@ -183,6 +183,16 @@ namespace AiroHelper.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap computer_website_user_interface_page_internet_web_house_ui_home_icon_210809__1_ {
+            get {
+                object obj = ResourceManager.GetObject("computer_website_user_interface_page_internet_web_house_ui_home_icon_210809 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap earth_planet_globe_environement_world_icon_191933 {
             get {
                 object obj = ResourceManager.GetObject("earth_planet_globe_environement_world_icon_191933", resourceCulture);
@@ -256,6 +266,16 @@ namespace AiroHelper.Properties {
         internal static System.Drawing.Bitmap innovation_1388014__1_ {
             get {
                 object obj = ResourceManager.GetObject("innovation_1388014 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap insurance_301070__1_ {
+            get {
+                object obj = ResourceManager.GetObject("insurance_301070 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -366,6 +386,16 @@ namespace AiroHelper.Properties {
         internal static System.Drawing.Bitmap social_10091605 {
             get {
                 object obj = ResourceManager.GetObject("social_10091605", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap star_15917949 {
+            get {
+                object obj = ResourceManager.GetObject("star_15917949", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

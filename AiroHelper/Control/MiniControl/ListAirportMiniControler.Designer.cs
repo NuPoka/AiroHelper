@@ -38,6 +38,7 @@
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.labelName = new System.Windows.Forms.Label();
             this.PictureBoxAirports = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.labelIDMC = new System.Windows.Forms.Label();
             this.panelAirports.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxAirports)).BeginInit();
@@ -46,6 +47,7 @@
             // panelAirports
             // 
             this.panelAirports.BackColor = System.Drawing.Color.SlateBlue;
+            this.panelAirports.Controls.Add(this.labelIDMC);
             this.panelAirports.Controls.Add(this.guna2VSeparator4);
             this.panelAirports.Controls.Add(this.guna2VSeparator3);
             this.panelAirports.Controls.Add(this.labelCity);
@@ -143,6 +145,16 @@
             this.PictureBoxAirports.TabIndex = 0;
             this.PictureBoxAirports.TabStop = false;
             // 
+            // labelIDMC
+            // 
+            this.labelIDMC.AutoSize = true;
+            this.labelIDMC.ForeColor = System.Drawing.Color.White;
+            this.labelIDMC.Location = new System.Drawing.Point(4, 12);
+            this.labelIDMC.Name = "labelIDMC";
+            this.labelIDMC.Size = new System.Drawing.Size(13, 13);
+            this.labelIDMC.TabIndex = 9;
+            this.labelIDMC.Text = "1";
+            // 
             // ListAirportMiniControler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,5 +181,6 @@
         public System.Windows.Forms.Panel panelAirports;
         public Guna.UI2.WinForms.Guna2CirclePictureBox PictureBoxAirports;
         public System.Windows.Forms.Label labelName;
+        public System.Windows.Forms.Label labelIDMC;
     }
 }

@@ -292,6 +292,7 @@
             this.MailT.ForeColor = System.Drawing.Color.Black;
             this.MailT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.MailT.Location = new System.Drawing.Point(66, 107);
+            this.MailT.MaxLength = 49;
             this.MailT.Name = "MailT";
             this.MailT.PasswordChar = '\0';
             this.MailT.PlaceholderText = "Почта";
@@ -316,6 +317,7 @@
             this.PassT.ForeColor = System.Drawing.Color.Black;
             this.PassT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PassT.Location = new System.Drawing.Point(66, 222);
+            this.PassT.MaxLength = 49;
             this.PassT.Name = "PassT";
             this.PassT.PasswordChar = '*';
             this.PassT.PlaceholderText = "Пароль";
@@ -340,9 +342,10 @@
             this.LoginT.ForeColor = System.Drawing.Color.Black;
             this.LoginT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.LoginT.Location = new System.Drawing.Point(66, 164);
+            this.LoginT.MaxLength = 49;
             this.LoginT.Name = "LoginT";
             this.LoginT.PasswordChar = '\0';
-            this.LoginT.PlaceholderText = "ФИО";
+            this.LoginT.PlaceholderText = "Логин";
             this.LoginT.SelectedText = "";
             this.LoginT.Size = new System.Drawing.Size(200, 36);
             this.LoginT.TabIndex = 2;

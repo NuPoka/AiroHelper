@@ -72,6 +72,5 @@ namespace AiroHelper
             reader.Close();
             dataBase.CloseConnection();
         }
-
     }
 }

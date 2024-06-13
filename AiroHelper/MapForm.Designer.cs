@@ -32,9 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MapForm));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.guna2VSeparator11 = new Guna.UI2.WinForms.Guna2VSeparator();
-            this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,9 +52,7 @@
             // 
             this.panelMenu.BackColor = System.Drawing.Color.SlateBlue;
             this.panelMenu.Controls.Add(this.guna2VSeparator11);
-            this.panelMenu.Controls.Add(this.guna2Separator2);
             this.panelMenu.Controls.Add(this.button1);
-            this.panelMenu.Controls.Add(this.btnExit);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Location = new System.Drawing.Point(0, 20);
             this.panelMenu.MaximumSize = new System.Drawing.Size(220, 589);
@@ -70,19 +66,12 @@
             this.guna2VSeparator11.FillColor = System.Drawing.Color.Black;
             this.guna2VSeparator11.Location = new System.Drawing.Point(213, 80);
             this.guna2VSeparator11.Name = "guna2VSeparator11";
-            this.guna2VSeparator11.Size = new System.Drawing.Size(10, 434);
+            this.guna2VSeparator11.Size = new System.Drawing.Size(10, 509);
             this.guna2VSeparator11.TabIndex = 8;
-            // 
-            // guna2Separator2
-            // 
-            this.guna2Separator2.Location = new System.Drawing.Point(12, 519);
-            this.guna2Separator2.Name = "guna2Separator2";
-            this.guna2Separator2.Size = new System.Drawing.Size(200, 10);
-            this.guna2Separator2.TabIndex = 6;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.SlateBlue;
+            this.button1.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -99,26 +88,6 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnExit.ForeColor = System.Drawing.Color.LightCyan;
-            this.btnExit.Image = global::AiroHelper.Properties.Resources.exit;
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 526);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnExit.Size = new System.Drawing.Size(220, 60);
-            this.btnExit.TabIndex = 3;
-            this.btnExit.Text = "    Выйти";
-            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // panelLogo
             // 
@@ -246,9 +215,7 @@
 
         private System.Windows.Forms.Panel panelMenu;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator11;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Panel panelLogo;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator1;
         private System.Windows.Forms.Label label1;

@@ -124,23 +124,23 @@
   <data name="airplane" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\airplane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search_15987732" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search_15987732.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="left-chevron_12533347 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\left-chevron_12533347 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add_11018427" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add_11018427.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="booking_5776488" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\booking_5776488.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="signboard_9836234" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\signboard_9836234.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logout256_24927" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logout256_24927.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user_172163" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_172163.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_12484191" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_12484191.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hospital-location_16361855" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hospital-location_16361855.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="search_9681932" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search_9681932.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -150,6 +150,9 @@
   </data>
   <data name="payment_11187675" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\payment_11187675.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="insurance_301070 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\insurance_301070 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="vip-room_5079966" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vip-room_5079966.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,14 +172,14 @@
   <data name="luggage_563759" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\luggage_563759.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="trade_4558779" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trade_4558779.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="search_15987732" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_15987732.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="facebook_3670032" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\facebook_3670032.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="earth_planet_globe_environement_world_icon_191933" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\earth_planet_globe_environement_world_icon_191933.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="atm_1551777" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\atm_1551777.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="taxi_1661993" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\taxi_1661993.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,23 +202,29 @@
   <data name="twitter_3670151" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\twitter_3670151.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="close_12484191" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close_12484191.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add_11018427" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_11018427.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="atm_1551777" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\atm_1551777.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="5-stars_5126509" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5-stars_5126509.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user_172163" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user_172163.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="computer_website_user_interface_page_internet_web_house_ui_home_icon_210809 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\computer_website_user_interface_page_internet_web_house_ui_home_icon_210809 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logout256_24927" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout256_24927.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="next_10238851" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\next_10238851.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="booking_5776488" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\booking_5776488.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="trade_4558779" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trade_4558779.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="facebook_3670032" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\facebook_3670032.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="left-chevron_12533347 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\left-chevron_12533347 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="timer_3833323" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\timer_3833323.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,7 +244,7 @@
   <data name="google-symbol_2875404" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\google-symbol_2875404.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hospital-location_16361855" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hospital-location_16361855.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="star_15917949" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\star_15917949.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -20,17 +20,44 @@ namespace AiroHelper
         {
             InitializeComponent();
         }
-
         private void pictureBoxDelete_Click(object sender, EventArgs e)
         {
-            dataBase.OpenConnection();
-            SqlCommand command = new SqlCommand("DELETE FROM Airoports WHERE Airoport_Name='" + labelName.Text + "'", dataBase.GetConnection());
-            command.ExecuteNonQuery();
-            dataBase.CloseConnection();
+            DeleteSchema();
+            DeleteAirport();
             this.Hide();
+        }
+        private void DeleteSchema()
+        {
+            try
+            {
+                dataBase.OpenConnection();
 
-            MessageBox.Show("Вы удалили аэропорт");
+                // Удаление записей из таблицы Schema, которые ссылаются на аэропорт
+                SqlCommand deleteSchemaCommand = new SqlCommand("DELETE FROM [Schema] WHERE Airoports_id ='" + this.labelIDMC.Text + "'", dataBase.GetConnection());
+                deleteSchemaCommand.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Не удалось удалить схему: " + ex.Message);
+            }
+        }
+        private void DeleteAirport()
+        {
+            try
+            {
+                dataBase.OpenConnection();
+                // Удаление аэропорта
+                SqlCommand deleteAirportCommand = new SqlCommand("DELETE FROM [Airoports] WHERE Airoport_Name ='" + this.labelName.Text + "'", dataBase.GetConnection());
+                deleteAirportCommand.ExecuteNonQuery();
 
+                dataBase.CloseConnection();
+
+                MessageBox.Show("Аэропорт был успешно удален");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Не удалось удалить аэропорт: " + ex.Message);
+            }
         }
     }
 }
