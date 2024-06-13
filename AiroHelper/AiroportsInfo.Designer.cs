@@ -32,8 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AiroportsInfo));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.guna2VSeparator11 = new Guna.UI2.WinForms.Guna2VSeparator();
-            this.btnAeroport = new System.Windows.Forms.Button();
             this.BtnMap = new System.Windows.Forms.Button();
+            this.btnAeroport = new System.Windows.Forms.Button();
+            this.BtnUser = new System.Windows.Forms.Button();
             this.AdminPanel = new System.Windows.Forms.Panel();
             this.AdminBtn = new System.Windows.Forms.Button();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
@@ -55,7 +56,7 @@
             this.TextBoxSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.PanelInfo = new Guna.UI2.WinForms.Guna2Panel();
-            this.BtnUser = new System.Windows.Forms.Button();
+            this.PanelUser = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.AdminPanel.SuspendLayout();
             this.panelLogo.SuspendLayout();
@@ -66,15 +67,16 @@
             this.UserPanel.SuspendLayout();
             this.PanelSeach.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnSearch)).BeginInit();
+            this.PanelUser.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.SlateBlue;
+            this.panelMenu.Controls.Add(this.PanelUser);
             this.panelMenu.Controls.Add(this.guna2VSeparator11);
-            this.panelMenu.Controls.Add(this.BtnMap);
             this.panelMenu.Controls.Add(this.btnAeroport);
-            this.panelMenu.Controls.Add(this.BtnUser);
+            this.panelMenu.Controls.Add(this.BtnMap);
             this.panelMenu.Controls.Add(this.AdminPanel);
             this.panelMenu.Controls.Add(this.guna2Separator3);
             this.panelMenu.Controls.Add(this.btnExit);
@@ -92,6 +94,27 @@
             this.guna2VSeparator11.Name = "guna2VSeparator11";
             this.guna2VSeparator11.Size = new System.Drawing.Size(10, 954);
             this.guna2VSeparator11.TabIndex = 7;
+            // 
+            // BtnMap
+            // 
+            this.BtnMap.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnMap.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnMap.FlatAppearance.BorderSize = 0;
+            this.BtnMap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMap.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BtnMap.ForeColor = System.Drawing.Color.LightCyan;
+            this.BtnMap.Image = ((System.Drawing.Image)(resources.GetObject("BtnMap.Image")));
+            this.BtnMap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnMap.Location = new System.Drawing.Point(0, 158);
+            this.BtnMap.Name = "BtnMap";
+            this.BtnMap.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.BtnMap.Size = new System.Drawing.Size(220, 60);
+            this.BtnMap.TabIndex = 4;
+            this.BtnMap.Text = "  Карта";
+            this.BtnMap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnMap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnMap.UseVisualStyleBackColor = true;
+            this.BtnMap.Click += new System.EventHandler(this.BtnMap_Click);
             // 
             // btnAeroport
             // 
@@ -114,26 +137,25 @@
             this.btnAeroport.UseVisualStyleBackColor = true;
             this.btnAeroport.Click += new System.EventHandler(this.btnAeroport_Click);
             // 
-            // BtnMap
+            // BtnUser
             // 
-            this.BtnMap.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnMap.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnMap.FlatAppearance.BorderSize = 0;
-            this.BtnMap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnMap.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BtnMap.ForeColor = System.Drawing.Color.LightCyan;
-            this.BtnMap.Image = ((System.Drawing.Image)(resources.GetObject("BtnMap.Image")));
-            this.BtnMap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnMap.Location = new System.Drawing.Point(0, 278);
-            this.BtnMap.Name = "BtnMap";
-            this.BtnMap.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.BtnMap.Size = new System.Drawing.Size(220, 60);
-            this.BtnMap.TabIndex = 4;
-            this.BtnMap.Text = "  Карта";
-            this.BtnMap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnMap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnMap.UseVisualStyleBackColor = true;
-            this.BtnMap.Click += new System.EventHandler(this.BtnMap_Click);
+            this.BtnUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnUser.FlatAppearance.BorderSize = 0;
+            this.BtnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.BtnUser.ForeColor = System.Drawing.Color.LightCyan;
+            this.BtnUser.Image = ((System.Drawing.Image)(resources.GetObject("BtnUser.Image")));
+            this.BtnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnUser.Location = new System.Drawing.Point(0, 5);
+            this.BtnUser.Name = "BtnUser";
+            this.BtnUser.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.BtnUser.Size = new System.Drawing.Size(214, 60);
+            this.BtnUser.TabIndex = 9;
+            this.BtnUser.Text = "  Профиль";
+            this.BtnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnUser.UseVisualStyleBackColor = true;
+            this.BtnUser.Click += new System.EventHandler(this.BtnUser_Click);
             // 
             // AdminPanel
             // 
@@ -377,26 +399,15 @@
             this.PanelInfo.Size = new System.Drawing.Size(966, 694);
             this.PanelInfo.TabIndex = 4;
             // 
-            // BtnUser
+            // PanelUser
             // 
-            this.BtnUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnUser.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnUser.FlatAppearance.BorderSize = 0;
-            this.BtnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
-            this.BtnUser.ForeColor = System.Drawing.Color.LightCyan;
-            this.BtnUser.Image = ((System.Drawing.Image)(resources.GetObject("BtnUser.Image")));
-            this.BtnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnUser.Location = new System.Drawing.Point(0, 158);
-            this.BtnUser.Name = "BtnUser";
-            this.BtnUser.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.BtnUser.Size = new System.Drawing.Size(220, 60);
-            this.BtnUser.TabIndex = 9;
-            this.BtnUser.Text = "  Профиль";
-            this.BtnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnUser.UseVisualStyleBackColor = true;
-            this.BtnUser.Click += new System.EventHandler(this.BtnUser_Click);
+            this.PanelUser.Controls.Add(this.BtnUser);
+            this.PanelUser.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelUser.Location = new System.Drawing.Point(0, 278);
+            this.PanelUser.Name = "PanelUser";
+            this.PanelUser.Size = new System.Drawing.Size(220, 68);
+            this.PanelUser.TabIndex = 10;
+            this.PanelUser.Visible = false;
             // 
             // AiroportsInfo
             // 
@@ -426,6 +437,7 @@
             this.PanelSeach.ResumeLayout(false);
             this.PanelSeach.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnSearch)).EndInit();
+            this.PanelUser.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -458,5 +470,6 @@
         private System.Windows.Forms.Panel PanelSeach;
         public System.Windows.Forms.PictureBox BackButton;
         private System.Windows.Forms.Button BtnUser;
+        public System.Windows.Forms.Panel PanelUser;
     }
 }

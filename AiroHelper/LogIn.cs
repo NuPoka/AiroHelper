@@ -83,7 +83,7 @@ namespace AiroHelper
 
             SqlDataAdapter adapter = new SqlDataAdapter();
             DataTable table = new DataTable();
-            string querystring = $"select User_Name, User_Password from Users where User_Name = '{login}' and User_Password ='{pass}'";
+            string querystring = $"select Id_User, User_Name, User_Password from Users where User_Name = '{login}' and User_Password ='{pass}'";
 
             SqlCommand command = new SqlCommand(querystring, dataBase.GetConnection());
 
@@ -101,6 +101,7 @@ namespace AiroHelper
             else
             {
                 if (LoginT.Text == "admin") { AiroportsInfo.Instance.pnlAdmin.Visible = true; }
+                AiroportsInfo.Instance.PnlUser.Visible = true;
                 AiroportsInfo.Instance.PnlLableUserText.Text = LoginT.Text;
                 DataBank.LoginUser = LoginT.Text;
                 AiroportsInfo.Instance.PnlLableUser.Visible = true;

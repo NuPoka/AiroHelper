@@ -31,15 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserPanel));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.ExitImages = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.guna2VSeparator11 = new Guna.UI2.WinForms.Guna2VSeparator();
-            this.BtnLike = new System.Windows.Forms.Button();
-            this.BtnUser = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.label1 = new System.Windows.Forms.Label();
-            this.menuButton = new System.Windows.Forms.PictureBox();
             this.panelInfoUser = new System.Windows.Forms.Panel();
             this.BtnSave = new Guna.UI2.WinForms.Guna2Button();
             this.panelPass = new System.Windows.Forms.Panel();
@@ -53,22 +49,30 @@
             this.TextBoxNameU = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.labelRole1 = new System.Windows.Forms.LinkLabel();
             this.labelMailU = new System.Windows.Forms.Label();
             this.labelNameU = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.PanelOtche = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.BtnSavePass = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnChangePhoto = new Guna.UI2.WinForms.Guna2Button();
+            this.ExitImages = new System.Windows.Forms.PictureBox();
+            this.BtnLike = new System.Windows.Forms.Button();
+            this.BtnUser = new System.Windows.Forms.Button();
+            this.menuButton = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ExitImages)).BeginInit();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.panelInfoUser.SuspendLayout();
             this.panelPass.SuspendLayout();
             this.panelUser.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ExitImages)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -83,18 +87,6 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1021, 30);
             this.guna2Panel1.TabIndex = 4;
             // 
-            // ExitImages
-            // 
-            this.ExitImages.BackColor = System.Drawing.Color.Transparent;
-            this.ExitImages.Image = global::AiroHelper.Properties.Resources.close_12484191;
-            this.ExitImages.Location = new System.Drawing.Point(988, 1);
-            this.ExitImages.Name = "ExitImages";
-            this.ExitImages.Size = new System.Drawing.Size(33, 26);
-            this.ExitImages.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ExitImages.TabIndex = 4;
-            this.ExitImages.TabStop = false;
-            this.ExitImages.Click += new System.EventHandler(this.ExitImages_Click);
-            // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.SlateBlue;
@@ -106,7 +98,7 @@
             this.panelMenu.MaximumSize = new System.Drawing.Size(220, 589);
             this.panelMenu.MinimumSize = new System.Drawing.Size(65, 517);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 544);
+            this.panelMenu.Size = new System.Drawing.Size(220, 568);
             this.panelMenu.TabIndex = 5;
             // 
             // guna2VSeparator11
@@ -116,48 +108,6 @@
             this.guna2VSeparator11.Name = "guna2VSeparator11";
             this.guna2VSeparator11.Size = new System.Drawing.Size(10, 461);
             this.guna2VSeparator11.TabIndex = 8;
-            // 
-            // BtnLike
-            // 
-            this.BtnLike.BackColor = System.Drawing.Color.SlateBlue;
-            this.BtnLike.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnLike.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnLike.FlatAppearance.BorderSize = 0;
-            this.BtnLike.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLike.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BtnLike.ForeColor = System.Drawing.Color.LightCyan;
-            this.BtnLike.Image = global::AiroHelper.Properties.Resources.star_15917949;
-            this.BtnLike.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnLike.Location = new System.Drawing.Point(0, 140);
-            this.BtnLike.Name = "BtnLike";
-            this.BtnLike.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.BtnLike.Size = new System.Drawing.Size(220, 60);
-            this.BtnLike.TabIndex = 9;
-            this.BtnLike.Text = "   Избранное";
-            this.BtnLike.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnLike.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnLike.UseVisualStyleBackColor = false;
-            // 
-            // BtnUser
-            // 
-            this.BtnUser.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.BtnUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnUser.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnUser.FlatAppearance.BorderSize = 0;
-            this.BtnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.BtnUser.ForeColor = System.Drawing.Color.LightCyan;
-            this.BtnUser.Image = global::AiroHelper.Properties.Resources.computer_website_user_interface_page_internet_web_house_ui_home_icon_210809__1_;
-            this.BtnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnUser.Location = new System.Drawing.Point(0, 80);
-            this.BtnUser.Name = "BtnUser";
-            this.BtnUser.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.BtnUser.Size = new System.Drawing.Size(220, 60);
-            this.BtnUser.TabIndex = 4;
-            this.BtnUser.Text = "   Личный кабинет";
-            this.BtnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnUser.UseVisualStyleBackColor = false;
             // 
             // panelLogo
             // 
@@ -190,21 +140,10 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "AiroHelper";
             // 
-            // menuButton
-            // 
-            this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.menuButton.Dock = System.Windows.Forms.DockStyle.Left;
-            this.menuButton.Image = ((System.Drawing.Image)(resources.GetObject("menuButton.Image")));
-            this.menuButton.Location = new System.Drawing.Point(0, 0);
-            this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(64, 80);
-            this.menuButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.menuButton.TabIndex = 0;
-            this.menuButton.TabStop = false;
-            // 
             // panelInfoUser
             // 
             this.panelInfoUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panelInfoUser.Controls.Add(this.BtnSavePass);
             this.panelInfoUser.Controls.Add(this.BtnSave);
             this.panelInfoUser.Controls.Add(this.panelPass);
             this.panelInfoUser.Controls.Add(this.panelUser);
@@ -212,7 +151,7 @@
             this.panelInfoUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelInfoUser.Location = new System.Drawing.Point(0, 0);
             this.panelInfoUser.Name = "panelInfoUser";
-            this.panelInfoUser.Size = new System.Drawing.Size(1021, 569);
+            this.panelInfoUser.Size = new System.Drawing.Size(1021, 594);
             this.panelInfoUser.TabIndex = 6;
             // 
             // BtnSave
@@ -227,7 +166,7 @@
             this.BtnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.BtnSave.ForeColor = System.Drawing.Color.White;
             this.BtnSave.IndicateFocus = true;
-            this.BtnSave.Location = new System.Drawing.Point(702, 321);
+            this.BtnSave.Location = new System.Drawing.Point(702, 328);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(194, 45);
             this.BtnSave.TabIndex = 3;
@@ -243,7 +182,7 @@
             this.panelPass.Controls.Add(this.label6);
             this.panelPass.Controls.Add(this.label7);
             this.panelPass.Controls.Add(this.label5);
-            this.panelPass.Location = new System.Drawing.Point(259, 372);
+            this.panelPass.Location = new System.Drawing.Point(259, 375);
             this.panelPass.Name = "panelPass";
             this.panelPass.Size = new System.Drawing.Size(637, 163);
             this.panelPass.TabIndex = 2;
@@ -268,8 +207,9 @@
             this.TextBoxNewPassU2.Location = new System.Drawing.Point(313, 99);
             this.TextBoxNewPassU2.MaxLength = 50;
             this.TextBoxNewPassU2.Name = "TextBoxNewPassU2";
-            this.TextBoxNewPassU2.PasswordChar = '\0';
-            this.TextBoxNewPassU2.PlaceholderText = "";
+            this.TextBoxNewPassU2.PasswordChar = '*';
+            this.TextBoxNewPassU2.PlaceholderForeColor = System.Drawing.Color.Gainsboro;
+            this.TextBoxNewPassU2.PlaceholderText = "Повторите пароль";
             this.TextBoxNewPassU2.SelectedText = "";
             this.TextBoxNewPassU2.Size = new System.Drawing.Size(274, 41);
             this.TextBoxNewPassU2.TabIndex = 9;
@@ -294,8 +234,9 @@
             this.TextBoxNewPassU.Location = new System.Drawing.Point(13, 99);
             this.TextBoxNewPassU.MaxLength = 50;
             this.TextBoxNewPassU.Name = "TextBoxNewPassU";
-            this.TextBoxNewPassU.PasswordChar = '\0';
-            this.TextBoxNewPassU.PlaceholderText = "";
+            this.TextBoxNewPassU.PasswordChar = '*';
+            this.TextBoxNewPassU.PlaceholderForeColor = System.Drawing.Color.Gainsboro;
+            this.TextBoxNewPassU.PlaceholderText = "Пароль";
             this.TextBoxNewPassU.SelectedText = "";
             this.TextBoxNewPassU.Size = new System.Drawing.Size(274, 41);
             this.TextBoxNewPassU.TabIndex = 9;
@@ -333,18 +274,21 @@
             // panelUser
             // 
             this.panelUser.BackColor = System.Drawing.Color.White;
+            this.panelUser.Controls.Add(this.BtnChangePhoto);
+            this.panelUser.Controls.Add(this.label8);
+            this.panelUser.Controls.Add(this.PanelOtche);
             this.panelUser.Controls.Add(this.TextBoxFamilyU);
             this.panelUser.Controls.Add(this.TextBoxNameU);
             this.panelUser.Controls.Add(this.label4);
             this.panelUser.Controls.Add(this.label3);
             this.panelUser.Controls.Add(this.pictureBox2);
-            this.panelUser.Controls.Add(this.linkLabel1);
+            this.panelUser.Controls.Add(this.labelRole1);
             this.panelUser.Controls.Add(this.labelMailU);
             this.panelUser.Controls.Add(this.labelNameU);
             this.panelUser.Controls.Add(this.pictureBox1);
             this.panelUser.Location = new System.Drawing.Point(259, 80);
             this.panelUser.Name = "panelUser";
-            this.panelUser.Size = new System.Drawing.Size(637, 239);
+            this.panelUser.Size = new System.Drawing.Size(637, 248);
             this.panelUser.TabIndex = 1;
             // 
             // TextBoxFamilyU
@@ -364,11 +308,12 @@
             this.TextBoxFamilyU.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.TextBoxFamilyU.ForeColor = System.Drawing.Color.Black;
             this.TextBoxFamilyU.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxFamilyU.Location = new System.Drawing.Point(233, 187);
+            this.TextBoxFamilyU.Location = new System.Drawing.Point(233, 195);
             this.TextBoxFamilyU.MaxLength = 50;
             this.TextBoxFamilyU.Name = "TextBoxFamilyU";
             this.TextBoxFamilyU.PasswordChar = '\0';
-            this.TextBoxFamilyU.PlaceholderText = "Павленко";
+            this.TextBoxFamilyU.PlaceholderForeColor = System.Drawing.Color.Gainsboro;
+            this.TextBoxFamilyU.PlaceholderText = "Иванов";
             this.TextBoxFamilyU.SelectedText = "";
             this.TextBoxFamilyU.Size = new System.Drawing.Size(172, 41);
             this.TextBoxFamilyU.TabIndex = 8;
@@ -390,11 +335,12 @@
             this.TextBoxNameU.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.TextBoxNameU.ForeColor = System.Drawing.Color.Black;
             this.TextBoxNameU.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TextBoxNameU.Location = new System.Drawing.Point(13, 187);
+            this.TextBoxNameU.Location = new System.Drawing.Point(13, 195);
             this.TextBoxNameU.MaxLength = 50;
             this.TextBoxNameU.Name = "TextBoxNameU";
             this.TextBoxNameU.PasswordChar = '\0';
-            this.TextBoxNameU.PlaceholderText = "Илья";
+            this.TextBoxNameU.PlaceholderForeColor = System.Drawing.Color.Gainsboro;
+            this.TextBoxNameU.PlaceholderText = "Иван";
             this.TextBoxNameU.SelectedText = "";
             this.TextBoxNameU.Size = new System.Drawing.Size(172, 41);
             this.TextBoxNameU.TabIndex = 7;
@@ -403,7 +349,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(239, 168);
+            this.label4.Location = new System.Drawing.Point(239, 176);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 16);
             this.label4.TabIndex = 6;
@@ -413,32 +359,22 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(20, 168);
+            this.label3.Location = new System.Drawing.Point(20, 176);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Имя";
             // 
-            // pictureBox2
+            // labelRole1
             // 
-            this.pictureBox2.Image = global::AiroHelper.Properties.Resources.insurance_301070__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(161, 94);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.linkLabel1.Location = new System.Drawing.Point(185, 99);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(102, 16);
-            this.linkLabel1.TabIndex = 3;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Пользователь";
+            this.labelRole1.AutoSize = true;
+            this.labelRole1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelRole1.Location = new System.Drawing.Point(185, 99);
+            this.labelRole1.Name = "labelRole1";
+            this.labelRole1.Size = new System.Drawing.Size(102, 16);
+            this.labelRole1.TabIndex = 3;
+            this.labelRole1.TabStop = true;
+            this.labelRole1.Text = "Пользователь";
             // 
             // labelMailU
             // 
@@ -459,17 +395,6 @@
             this.labelNameU.Size = new System.Drawing.Size(98, 24);
             this.labelNameU.TabIndex = 1;
             this.labelNameU.Text = "user_login";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(23, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -492,11 +417,172 @@
             this.guna2Elipse2.BorderRadius = 20;
             this.guna2Elipse2.TargetControl = this.panelPass;
             // 
+            // PanelOtche
+            // 
+            this.PanelOtche.Animated = true;
+            this.PanelOtche.AutoRoundedCorners = true;
+            this.PanelOtche.BorderColor = System.Drawing.Color.Black;
+            this.PanelOtche.BorderRadius = 19;
+            this.PanelOtche.BorderThickness = 2;
+            this.PanelOtche.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PanelOtche.DefaultText = "";
+            this.PanelOtche.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PanelOtche.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PanelOtche.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PanelOtche.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PanelOtche.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PanelOtche.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.PanelOtche.ForeColor = System.Drawing.Color.Black;
+            this.PanelOtche.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PanelOtche.Location = new System.Drawing.Point(443, 195);
+            this.PanelOtche.MaxLength = 50;
+            this.PanelOtche.Name = "PanelOtche";
+            this.PanelOtche.PasswordChar = '\0';
+            this.PanelOtche.PlaceholderForeColor = System.Drawing.Color.Gainsboro;
+            this.PanelOtche.PlaceholderText = "Иванович";
+            this.PanelOtche.SelectedText = "";
+            this.PanelOtche.Size = new System.Drawing.Size(172, 41);
+            this.PanelOtche.TabIndex = 9;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(450, 176);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(70, 16);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Отчество";
+            // 
+            // BtnSavePass
+            // 
+            this.BtnSavePass.Animated = true;
+            this.BtnSavePass.BackColor = System.Drawing.Color.Transparent;
+            this.BtnSavePass.BorderRadius = 10;
+            this.BtnSavePass.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnSavePass.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnSavePass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnSavePass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnSavePass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.BtnSavePass.ForeColor = System.Drawing.Color.White;
+            this.BtnSavePass.IndicateFocus = true;
+            this.BtnSavePass.Location = new System.Drawing.Point(702, 541);
+            this.BtnSavePass.Name = "BtnSavePass";
+            this.BtnSavePass.Size = new System.Drawing.Size(194, 45);
+            this.BtnSavePass.TabIndex = 4;
+            this.BtnSavePass.Text = "Сохранить пароль";
+            this.BtnSavePass.UseTransparentBackground = true;
+            this.BtnSavePass.Click += new System.EventHandler(this.BtnSavePass_Click);
+            // 
+            // BtnChangePhoto
+            // 
+            this.BtnChangePhoto.BorderRadius = 10;
+            this.BtnChangePhoto.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnChangePhoto.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnChangePhoto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnChangePhoto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnChangePhoto.FillColor = System.Drawing.Color.Green;
+            this.BtnChangePhoto.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.BtnChangePhoto.ForeColor = System.Drawing.Color.White;
+            this.BtnChangePhoto.Location = new System.Drawing.Point(23, 138);
+            this.BtnChangePhoto.Name = "BtnChangePhoto";
+            this.BtnChangePhoto.Size = new System.Drawing.Size(128, 37);
+            this.BtnChangePhoto.TabIndex = 11;
+            this.BtnChangePhoto.Text = "Изменить фото";
+            // 
+            // ExitImages
+            // 
+            this.ExitImages.BackColor = System.Drawing.Color.Transparent;
+            this.ExitImages.Image = global::AiroHelper.Properties.Resources.close_12484191;
+            this.ExitImages.Location = new System.Drawing.Point(988, 1);
+            this.ExitImages.Name = "ExitImages";
+            this.ExitImages.Size = new System.Drawing.Size(33, 26);
+            this.ExitImages.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ExitImages.TabIndex = 4;
+            this.ExitImages.TabStop = false;
+            this.ExitImages.Click += new System.EventHandler(this.ExitImages_Click);
+            // 
+            // BtnLike
+            // 
+            this.BtnLike.BackColor = System.Drawing.Color.SlateBlue;
+            this.BtnLike.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnLike.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnLike.FlatAppearance.BorderSize = 0;
+            this.BtnLike.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLike.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BtnLike.ForeColor = System.Drawing.Color.LightCyan;
+            this.BtnLike.Image = global::AiroHelper.Properties.Resources.star_15917949;
+            this.BtnLike.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnLike.Location = new System.Drawing.Point(0, 140);
+            this.BtnLike.Name = "BtnLike";
+            this.BtnLike.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.BtnLike.Size = new System.Drawing.Size(220, 60);
+            this.BtnLike.TabIndex = 9;
+            this.BtnLike.Text = "   Избранное";
+            this.BtnLike.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnLike.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnLike.UseVisualStyleBackColor = false;
+            this.BtnLike.Click += new System.EventHandler(this.BtnLike_Click);
+            // 
+            // BtnUser
+            // 
+            this.BtnUser.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.BtnUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnUser.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnUser.FlatAppearance.BorderSize = 0;
+            this.BtnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BtnUser.ForeColor = System.Drawing.Color.LightCyan;
+            this.BtnUser.Image = global::AiroHelper.Properties.Resources.computer_website_user_interface_page_internet_web_house_ui_home_icon_210809__1_;
+            this.BtnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnUser.Location = new System.Drawing.Point(0, 80);
+            this.BtnUser.Name = "BtnUser";
+            this.BtnUser.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.BtnUser.Size = new System.Drawing.Size(220, 60);
+            this.BtnUser.TabIndex = 4;
+            this.BtnUser.Text = "   Личный кабинет";
+            this.BtnUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnUser.UseVisualStyleBackColor = false;
+            // 
+            // menuButton
+            // 
+            this.menuButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.menuButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.menuButton.Image = ((System.Drawing.Image)(resources.GetObject("menuButton.Image")));
+            this.menuButton.Location = new System.Drawing.Point(0, 0);
+            this.menuButton.Name = "menuButton";
+            this.menuButton.Size = new System.Drawing.Size(64, 80);
+            this.menuButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.menuButton.TabIndex = 0;
+            this.menuButton.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::AiroHelper.Properties.Resources.insurance_301070__1_;
+            this.pictureBox2.Location = new System.Drawing.Point(161, 94);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(23, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // UserPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1021, 569);
+            this.ClientSize = new System.Drawing.Size(1021, 594);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panelMenu);
             this.Controls.Add(this.panelInfoUser);
@@ -507,17 +593,17 @@
             this.Text = "UserPanel";
             this.Load += new System.EventHandler(this.UserPanel_Load);
             this.guna2Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ExitImages)).EndInit();
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.panelInfoUser.ResumeLayout(false);
             this.panelInfoUser.PerformLayout();
             this.panelPass.ResumeLayout(false);
             this.panelPass.PerformLayout();
             this.panelUser.ResumeLayout(false);
             this.panelUser.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ExitImages)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -538,7 +624,7 @@
         private System.Windows.Forms.Panel panelInfoUser;
         private System.Windows.Forms.Panel panelUser;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel labelRole1;
         private System.Windows.Forms.Label labelMailU;
         private System.Windows.Forms.Label labelNameU;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -557,5 +643,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label8;
+        private Guna.UI2.WinForms.Guna2TextBox PanelOtche;
+        private Guna.UI2.WinForms.Guna2Button BtnSavePass;
+        private Guna.UI2.WinForms.Guna2Button BtnChangePhoto;
     }
 }

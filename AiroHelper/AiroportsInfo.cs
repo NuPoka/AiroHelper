@@ -35,6 +35,11 @@ namespace AiroHelper
                 return _obj;
             }
         }
+        public Panel PnlUser
+        {
+            get { return PanelUser; }
+            set { PanelUser = value; }
+        }
         public Panel pnlSearch
         {
             get { return PanelSeach; }

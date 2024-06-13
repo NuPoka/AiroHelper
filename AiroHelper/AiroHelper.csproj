@@ -157,6 +157,12 @@
     </Compile>
     <Compile Include="DataBank.cs" />
     <Compile Include="DataBase.cs" />
+    <Compile Include="Favorits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Favorits.Designer.cs">
+      <DependentUpon>Favorits.cs</DependentUpon>
+    </Compile>
     <Compile Include="Schema.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +229,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Control\RoadControl.resx">
       <DependentUpon>RoadControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Favorits.resx">
+      <DependentUpon>Favorits.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Schema.resx">
       <DependentUpon>Schema.cs</DependentUpon>
