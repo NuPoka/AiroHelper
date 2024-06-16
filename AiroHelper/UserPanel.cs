@@ -1,14 +1,21 @@
-﻿using System;
+﻿using AiroHelper.Control.MiniControl;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
+using System.Data.OleDb;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Web.UI.WebControls;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using Image = System.Drawing.Image;
 
 namespace AiroHelper
 {
@@ -24,6 +31,7 @@ namespace AiroHelper
         {
             TextBoxNameU.Text = DataBank.Name;
             TextBoxFamilyU.Text = DataBank.Family;
+            TextBoxOtchestvoU.Text = DataBank.Otchestvo;
             labelNameU.Text = DataBank.LoginUser;
             if (labelNameU.Text == "admin")
             {
@@ -57,9 +65,10 @@ namespace AiroHelper
             if (string.IsNullOrWhiteSpace(nameing)) TextBoxNameU.BorderColor = Color.Red;
             if (string.IsNullOrWhiteSpace(family)) TextBoxFamilyU.BorderColor = Color.Red;
             dataBase.OpenConnection();
-            SqlCommand sqlCommand = new SqlCommand("UPDATE Users SET User_N = @user_name, User_F = @user_family WHERE User_Name = @login", dataBase.GetConnection());
+            SqlCommand sqlCommand = new SqlCommand("UPDATE Users SET User_N = @user_name, User_F = @user_family, User_O = @user_otchestvo WHERE User_Name = @login", dataBase.GetConnection());
             sqlCommand.Parameters.AddWithValue("@user_name", TextBoxNameU.Text);
             sqlCommand.Parameters.AddWithValue("@user_family", TextBoxFamilyU.Text);
+            sqlCommand.Parameters.AddWithValue("@user_otchestvo", TextBoxOtchestvoU.Text);
             sqlCommand.Parameters.AddWithValue("@login", DataBank.LoginUser);
             int result = sqlCommand.ExecuteNonQuery();
             if (result > 0)
@@ -69,8 +78,10 @@ namespace AiroHelper
                 TextBoxFamilyU.BorderColor = Color.Lime;
                 TextBoxNameU.ReadOnly = true;
                 TextBoxFamilyU.ReadOnly = true;
+                TextBoxOtchestvoU.ReadOnly = true;
                 DataBank.Name = TextBoxNameU.Text;
                 DataBank.Family = TextBoxFamilyU.Text;
+                DataBank.Otchestvo = TextBoxOtchestvoU.Text;
             }
             else
             {
@@ -79,7 +90,6 @@ namespace AiroHelper
         }
         private bool CheckPasswordsMatch(string newPassword, string confirmPassword)
         {
-            // Проверяем, что оба поля пароля не пустые и совпадают
             if (string.IsNullOrWhiteSpace(newPassword) || string.IsNullOrWhiteSpace(confirmPassword))
             {
                 return false;
@@ -119,9 +129,31 @@ namespace AiroHelper
 
         private void BtnLike_Click(object sender, EventArgs e)
         {
-            Favorits fav = new Favorits();
-            fav.Show();
+            Favorits favorits = new Favorits();
+            favorits.Show();
             this.Hide();
+            PrintFavAirport(favorits);
+        }
+        private void PrintFavAirport(Favorits favorits)
+        {
+            dataBase.OpenConnection();
+            SqlCommand command = new SqlCommand("SELECT * FROM [Favorite] WHERE User_id = @Userid", dataBase.GetConnection());
+            command.Parameters.AddWithValue("@Userid", AplicationContext.UserId);
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                FavoriteAirportsMControl Item = new FavoriteAirportsMControl();
+
+                byte[] Photo = (byte[])(reader[2]);
+                MemoryStream memoryStream = new MemoryStream(Photo);
+                Item.pictureBoxAirportFav.Image = Image.FromStream(memoryStream);
+                Item.labelNameFav.Text = reader[3].ToString();
+                Item.labelCodeFav.Text = reader[4].ToString();
+                favorits.flowLayoutPanel1.Controls.Add(Item);
+            }
+            reader.Close();
+            dataBase.CloseConnection();
         }
     }
 }

@@ -12,6 +12,7 @@ namespace AiroHelper
 {
     public partial class Favorits : Form
     {
+        DataBase dataBase = new DataBase();
         public Favorits()
         {
             InitializeComponent();
@@ -21,6 +22,10 @@ namespace AiroHelper
         {
             UserPanel userPanel = new UserPanel();
             userPanel.Show();
+            this.Hide();
+        }
+        private void ExitImages_Click(object sender, EventArgs e)
+        {
             this.Hide();
         }
     }

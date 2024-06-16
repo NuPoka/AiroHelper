@@ -11,5 +11,6 @@ namespace AiroHelper
         public static string LoginUser;
         public static string Name;
         public static string Family;
+        public static string Otchestvo;
     }
 }

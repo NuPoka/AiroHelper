@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AiroHelper.AdminPanel" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAIgAgEzUEgxABEAChEAAKBAAGYAgSgAAAKQDIAEA=</HashCode>
+      <FileName>AdminPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.AiroportsInfo" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQgMEAAAECwUABAHAACBCCwCYDAAhSAYRABAASAcAAA=</HashCode>
+      <FileName>AiroportsInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.AirPortsControl" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/yEAAhICgXEkABKGgEiMCgDyDzcCAIMAAQiCARBCTXM=</HashCode>
+      <FileName>Control\AirPortsControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.FlowLayoutPanelForListAirportControler" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Control\FlowLayoutPanelForListAirportControler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.ListAdminUserControl" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQEAAAEQACAEABBACACCBAACAAAAAAAAgAQAAQAAEAA=</HashCode>
+      <FileName>Control\ListAdminUserControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.LogRegControl" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQAAAAAgACAEABAAAACAAAACAAAEAAAAgAQQAYIACAA=</HashCode>
+      <FileName>Control\LogRegControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.AirportListMiniControl" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAUIAgCAEAAAAAACAAhACAAAAAAEAAAQAAQAAKAA=</HashCode>
+      <FileName>Control\MiniControl\AirportListMiniControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.ListAirportMiniControler" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAJABCAEAACEAACQAAACEAAAAgoAIAAAAAAASAM=</HashCode>
+      <FileName>Control\MiniControl\ListAirportMiniControler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.ListUserMiniControler" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAABCAEAAAEAACAAAQCAAAAAgAAAAAAAAAASAs=</HashCode>
+      <FileName>Control\MiniControl\ListUserMiniControler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.DataBank" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAAAAAAAAABAE=</HashCode>
+      <FileName>DataBank.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.DataBase" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAQAAEAAAAAAAABAAAAA=</HashCode>
+      <FileName>DataBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.Favorits" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgIAAAAACAEABAAAACAAkACAIBmBCAAAAAAAAAMQAA=</HashCode>
+      <FileName>Favorits.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.LogIn" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQDAAlABQDAEBRAEAACAgQASEAAAAIAQwEY0AIBAAAA=</HashCode>
+      <FileName>LogIn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.MapForm" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAgIgQIAgCCEABQAAACAABACAABqBAAACRAAAAAIQAA=</HashCode>
+      <FileName>MapForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.AirMap" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAIAEgAAAQAAAAAIAEAAGAAAACAABAAAAAAAAAA=</HashCode>
+      <FileName>Maping\AirMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.AirMapRepos" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Maping\AirMapRepos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.Program" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.RegIn" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQCAIhABSDAEARAEAICEgEACAAAAAAAQkkQQgIBEAAA=</HashCode>
+      <FileName>RegIn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.Schema" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAACAEABAAAACAAACCAAAAAAAABAAAAQAAIA0=</HashCode>
+      <FileName>Schema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.UserPanel" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAwYAAAAADQGgBAAYACAAEIGAgBiBQAAAgBAIBBMQgA=</HashCode>
+      <FileName>UserPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.Control.MiniControl.FavoriteAirportsMControl" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAICQgAAAAAACAAAACAAACAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Control\MiniControl\FavoriteAirportsMControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.Control.MiniControl.TransportMControl" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAJAAACQAABAAhACAAACCAIAAEAIAAAAAAABAAIA=</HashCode>
+      <FileName>Control\MiniControl\TransportMControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.Control.RoadControl" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAAAACAIAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Control\RoadControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.Properties.Resources" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAIRAAZMAAggACACAQABEAGgZVAgghBUAIIAACAxAZg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AiroHelper.Properties.Settings" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Forms.Form" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="13.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Forms.UserControl" Collapsed="true">
+    <Position X="9.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

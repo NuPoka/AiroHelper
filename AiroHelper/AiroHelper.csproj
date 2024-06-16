@@ -131,6 +131,12 @@
     <Compile Include="Control\MiniControl\AirportListMiniControl.Designer.cs">
       <DependentUpon>AirportListMiniControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Control\MiniControl\FavoriteAirportsMControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\MiniControl\FavoriteAirportsMControl.Designer.cs">
+      <DependentUpon>FavoriteAirportsMControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Control\MiniControl\ListAirportMiniControler.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -142,6 +148,12 @@
     </Compile>
     <Compile Include="Control\MiniControl\ListUserMiniControler.Designer.cs">
       <DependentUpon>ListUserMiniControler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\MiniControl\ReviewMControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\MiniControl\ReviewMControl.Designer.cs">
+      <DependentUpon>ReviewMControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Control\MiniControl\TransportMControl.cs">
       <SubType>UserControl</SubType>
@@ -218,11 +230,17 @@
     <EmbeddedResource Include="Control\MiniControl\AirportListMiniControl.resx">
       <DependentUpon>AirportListMiniControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Control\MiniControl\FavoriteAirportsMControl.resx">
+      <DependentUpon>FavoriteAirportsMControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Control\MiniControl\ListAirportMiniControler.resx">
       <DependentUpon>ListAirportMiniControler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Control\MiniControl\ListUserMiniControler.resx">
       <DependentUpon>ListUserMiniControler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\MiniControl\ReviewMControl.resx">
+      <DependentUpon>ReviewMControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Control\MiniControl\TransportMControl.resx">
       <DependentUpon>TransportMControl.cs</DependentUpon>
@@ -258,6 +276,7 @@
     <EmbeddedResource Include="UserPanel.resx">
       <DependentUpon>UserPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -34,16 +34,20 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.panelFav = new System.Windows.Forms.Panel();
+            this.ExitImages = new System.Windows.Forms.PictureBox();
             this.BtnLike = new System.Windows.Forms.Button();
             this.BtnUser = new System.Windows.Forms.Button();
             this.menuButton = new System.Windows.Forms.PictureBox();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.ExitImages = new System.Windows.Forms.PictureBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.guna2Panel1.SuspendLayout();
+            this.panelFav.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ExitImages)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -98,6 +102,38 @@
             this.label1.Size = new System.Drawing.Size(101, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "AiroHelper";
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.guna2Panel1.Controls.Add(this.ExitImages);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1021, 30);
+            this.guna2Panel1.TabIndex = 7;
+            // 
+            // panelFav
+            // 
+            this.panelFav.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panelFav.Controls.Add(this.label2);
+            this.panelFav.Controls.Add(this.flowLayoutPanel1);
+            this.panelFav.Location = new System.Drawing.Point(220, 30);
+            this.panelFav.Name = "panelFav";
+            this.panelFav.Size = new System.Drawing.Size(801, 564);
+            this.panelFav.TabIndex = 8;
+            // 
+            // ExitImages
+            // 
+            this.ExitImages.BackColor = System.Drawing.Color.Transparent;
+            this.ExitImages.Image = global::AiroHelper.Properties.Resources.close_12484191;
+            this.ExitImages.Location = new System.Drawing.Point(988, 1);
+            this.ExitImages.Name = "ExitImages";
+            this.ExitImages.Size = new System.Drawing.Size(33, 26);
+            this.ExitImages.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ExitImages.TabIndex = 4;
+            this.ExitImages.TabStop = false;
+            this.ExitImages.Click += new System.EventHandler(this.ExitImages_Click);
             // 
             // BtnLike
             // 
@@ -154,32 +190,31 @@
             this.menuButton.TabIndex = 0;
             this.menuButton.TabStop = false;
             // 
-            // guna2Panel1
+            // flowLayoutPanel1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.guna2Panel1.Controls.Add(this.ExitImages);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1021, 30);
-            this.guna2Panel1.TabIndex = 7;
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 60);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(801, 504);
+            this.flowLayoutPanel1.TabIndex = 1;
             // 
-            // ExitImages
+            // label2
             // 
-            this.ExitImages.BackColor = System.Drawing.Color.Transparent;
-            this.ExitImages.Image = global::AiroHelper.Properties.Resources.close_12484191;
-            this.ExitImages.Location = new System.Drawing.Point(988, 1);
-            this.ExitImages.Name = "ExitImages";
-            this.ExitImages.Size = new System.Drawing.Size(33, 26);
-            this.ExitImages.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ExitImages.TabIndex = 4;
-            this.ExitImages.TabStop = false;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(42, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(711, 37);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Аэропорты которые вы добавили в избранное";
             // 
             // Favorits
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1021, 594);
+            this.Controls.Add(this.panelFav);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -189,9 +224,11 @@
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
+            this.panelFav.ResumeLayout(false);
+            this.panelFav.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ExitImages)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -208,5 +245,8 @@
         private System.Windows.Forms.PictureBox menuButton;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.PictureBox ExitImages;
+        private System.Windows.Forms.Panel panelFav;
+        public System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Label label2;
     }
 }

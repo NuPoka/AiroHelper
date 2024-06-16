@@ -23,6 +23,7 @@ namespace AiroHelper
         private void pictureBoxDelete_Click(object sender, EventArgs e)
         {
             DeleteSchema();
+            DeleteTransport();
             DeleteAirport();
             this.Hide();
         }
@@ -33,12 +34,25 @@ namespace AiroHelper
                 dataBase.OpenConnection();
 
                 // Удаление записей из таблицы Schema, которые ссылаются на аэропорт
-                SqlCommand deleteSchemaCommand = new SqlCommand("DELETE FROM [Schema] WHERE Airoports_id ='" + this.labelIDMC.Text + "'", dataBase.GetConnection());
+                SqlCommand deleteSchemaCommand = new SqlCommand("DELETE FROM [Schema] WHERE Airoports_id ='" + labelIDMC.Text + "'", dataBase.GetConnection());
                 deleteSchemaCommand.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Не удалось удалить схему: " + ex.Message);
+            }
+        }
+        private void DeleteTransport()
+        {
+            try
+            {
+                dataBase.OpenConnection();
+                SqlCommand deleteTransportCommand = new SqlCommand("DELETE FROM [Transport] WHERE Airoport_Id = @AiroportId", dataBase.GetConnection());
+                deleteTransportCommand.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Не удалось удалить транспорт: " + ex.Message);
             }
         }
         private void DeleteAirport()
@@ -47,7 +61,7 @@ namespace AiroHelper
             {
                 dataBase.OpenConnection();
                 // Удаление аэропорта
-                SqlCommand deleteAirportCommand = new SqlCommand("DELETE FROM [Airoports] WHERE Airoport_Name ='" + this.labelName.Text + "'", dataBase.GetConnection());
+                SqlCommand deleteAirportCommand = new SqlCommand("DELETE FROM [Airoports] WHERE Airoport_Name ='" + labelName.Text + "'", dataBase.GetConnection());
                 deleteAirportCommand.ExecuteNonQuery();
 
                 dataBase.CloseConnection();

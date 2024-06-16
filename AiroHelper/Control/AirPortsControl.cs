@@ -5,7 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Data.Entity;
+using System.Data.OleDb;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
@@ -18,6 +20,7 @@ namespace AiroHelper
 {
     public partial class AirPortsControl : UserControl
     {
+       
         DataBase dataBase = new DataBase();
         public AirPortsControl()
         {
@@ -32,6 +35,7 @@ namespace AiroHelper
                 BtnClaim.BackColor = SystemColors.Control;
                 BtnClaim.Image = Properties.Resources.favorites_white;
                 BtnClaim.Text = "В избранное";
+                DeleteFavAir();
             }
             else
             {
@@ -39,10 +43,52 @@ namespace AiroHelper
                 BtnClaim.BackColor = Color.Black;
                 BtnClaim.Image = Properties.Resources.favorites_black;
                 BtnClaim.Text = "В избранном";
+                AddFavAir();
             }
             chenges = !chenges;
         }
+        private void AddFavAir()
+        {
+            try
+            {
+                MemoryStream memoryStream = new MemoryStream();
+                guna2PictureBox1.Image.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Png);
+                byte[] Photo = new byte[memoryStream.Length];
 
+                memoryStream.Position = 0;
+                memoryStream.Read(Photo, 0, Photo.Length);
+                dataBase.OpenConnection();
+                SqlCommand command = new SqlCommand("INSERT INTO Favorite (User_id, Favorite_Name, Favorite_Image, Favorite_Code) VALUES (@Userid, @AirName, @photo, @AirCode)", dataBase.GetConnection());
+                command.Parameters.AddWithValue("@photo", Photo);
+                command.Parameters.AddWithValue("@AirName", labelName.Text);
+                command.Parameters.AddWithValue("@AirCode", labelCode.Text);
+                command.Parameters.AddWithValue("@Userid", AplicationContext.UserId);
+                command.ExecuteNonQuery();
+                dataBase.CloseConnection();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Messenge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                dataBase.CloseConnection();
+            }
+        }
+        private void DeleteFavAir()
+        {
+            try
+            {
+                dataBase.OpenConnection();
+                SqlCommand command = new SqlCommand("DELETE FROM Favorite WHERE Favorite_Name=@AirName", dataBase.GetConnection());
+                command.Parameters.AddWithValue("@AirName", labelName.Text);
+                command.ExecuteNonQuery();
+                dataBase.CloseConnection();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Messenge", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                dataBase.CloseConnection();
+            }
+        }
 
         private void BtnRoad_Click(object sender, EventArgs e)
         {
@@ -72,5 +118,24 @@ namespace AiroHelper
             reader.Close();
             dataBase.CloseConnection();
         }
+
+        private void AirPortsControl_Load(object sender, EventArgs e)
+        {
+            dataBase.OpenConnection();
+            SqlCommand command = new SqlCommand("SELECT * FROM [Review] WHERE Airoport_id='" + this.labelId.Text + "'", dataBase.GetConnection());
+            SqlDataReader reader = command.ExecuteReader();
+            flowLayoutPanelReview.Controls.Clear();
+            while (reader.Read())
+            {
+                ReviewMControl review = new ReviewMControl();
+                review.labelReviewUserName.Text = reader["User_Id"].ToString();
+                review.labelId.Text = reader["Airoport_id"].ToString();
+                review.labelRiviewComment.Text = reader["Review_Comment"].ToString();
+                flowLayoutPanelReview.Controls.Add(review);
+            }
+            reader.Close();
+            dataBase.CloseConnection();
+        }
     }
 }
+ 

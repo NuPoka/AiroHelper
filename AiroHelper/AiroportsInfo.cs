@@ -68,43 +68,56 @@ namespace AiroHelper
         private void PerformSearch()
         {
             string query = TextBoxSearch.Text;
+            FlowLayoutPanelForListAirportControler userListControl;
 
-            // Очищаем предыдущие результаты
-            PanelInfo.Controls.Clear();
-
-            using (SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-PD7QD52;Initial Catalog=AiroHelper;Integrated Security=True;"))
+            if (PanelInfo.Controls.Count == 0 || !(PanelInfo.Controls[0] is FlowLayoutPanelForListAirportControler))
             {
-                connection.Open();
-                string sqlQuery = "SELECT Airoport_Name, Airoport_City, Airoport_Description, Airoport_Map_Image FROM Airoports WHERE Airoport_City LIKE @query OR Airoport_Name LIKE @query";
-                using (SqlCommand command = new SqlCommand(sqlQuery, connection))
-                {
-                    command.Parameters.AddWithValue("@query", "%" + query + "%");
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        // Создаем пользовательский элемент управления для отображения всех результатов
-                        var userListControl = new FlowLayoutPanelForListAirportControler();
+                userListControl = new FlowLayoutPanelForListAirportControler();
+                PanelInfo.Controls.Add(userListControl);
+            }
+            else
+            {
+                userListControl = (FlowLayoutPanelForListAirportControler)PanelInfo.Controls[0];
+            }
 
-                        while (reader.Read())
+            userListControl.flowLayoutPanelAirPort.Controls.Clear();
+
+            dataBase.OpenConnection();
+            string sqlQuery = "SELECT Airoport_Name, Airoport_City, Airoport_Description, Airoport_Map_Image FROM Airoports WHERE Airoport_City LIKE @query OR Airoport_Name LIKE @query";
+            using (SqlCommand command = new SqlCommand(sqlQuery, dataBase.GetConnection()))
+            {
+                command.Parameters.AddWithValue("@query", "%" + query + "%");
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    bool hasResults = false;
+
+                    while (reader.Read())
+                    {
+                        hasResults = true;
+                        byte[] photo = (byte[])(reader["Airoport_Map_Image"]);
+                        string airportDescription = reader["Airoport_Description"].ToString();
+                        string aidi = reader["Airoport_Name"].ToString();
+                        Image airportImage = null;
+                        if (photo != null && photo.Length > 0)
                         {
-                            byte[] photo = (byte[])(reader["Airoport_Map_Image"]);
-                            string airportDescription = reader["Airoport_Description"].ToString();
-                            string aidi = reader["Airoport_Name"].ToString();
-                            Image airportImage = null;
-                            if (photo != null && photo.Length > 0)
+                            using (MemoryStream memoryStream = new MemoryStream(photo))
                             {
-                                using (MemoryStream memoryStream = new MemoryStream(photo))
-                                {
-                                    airportImage = Image.FromStream(memoryStream);
-                                }
+                                airportImage = Image.FromStream(memoryStream);
                             }
-                            var resultControl = new AirportListMiniControl(airportImage, airportDescription, aidi);
-                            userListControl.flowLayoutPanelAirPort.Controls.Add(resultControl);
                         }
-                        PanelInfo.Controls.Add(userListControl);
+                        var resultControl = new AirportListMiniControl(airportImage, airportDescription, aidi);
+                        userListControl.flowLayoutPanelAirPort.Controls.Add(resultControl);
+                    }
+
+                    if (!hasResults)
+                    {
+                        MessageBox.Show("Аэропорт или город не найден.");
                     }
                 }
             }
+            dataBase.CloseConnection();
         }
+
         private void BtnSearch_Click(object sender, EventArgs e)
         {
             PerformSearch();
@@ -188,16 +201,17 @@ namespace AiroHelper
         }
         public void PrintListAirport(FlowLayoutPanelForListAirportControler UserListControl)
         {
-
             dataBase.OpenConnection();
             SqlCommand command = new SqlCommand("SELECT * FROM [Airoports]", dataBase.GetConnection());
             SqlDataReader reader = command.ExecuteReader();
 
             while (reader.Read())
             {
+
                 // Проверяем, что столбец с фото и описанием существует
                 if (reader[9] != DBNull.Value && reader[7] != DBNull.Value)
                 {
+
                     byte[] photo = (byte[])(reader[9]);
                     MemoryStream memoryStream = new MemoryStream(photo);
                     Image airportImage = Image.FromStream(memoryStream);
@@ -213,7 +227,6 @@ namespace AiroHelper
             reader.Close();
             dataBase.CloseConnection();
         }
-
         private void AiroportsInfo_Load(object sender, EventArgs e)
         {
             _obj = this;
@@ -225,13 +238,10 @@ namespace AiroHelper
 
             PrintListAirport(userListControl);
         }
-
-
         private void BtnMap_Click(object sender, EventArgs e)
         {
             MapForm mapForm = new MapForm();
             mapForm.Show();
-
         }
 
         private void PictureBoxLogReg_Click(object sender, EventArgs e)

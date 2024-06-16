@@ -319,8 +319,7 @@ namespace AiroHelper
                     "INSERT INTO Airoports (Airoport_Name, Airoport_Code, Airoport_City, Airoport_Аddress, Airoport_Location_x, Airoport_Location_y, Airoport_Company, Airoport_Map_Image, Airoport_Description) " +
                     "OUTPUT INSERTED.Id_Airoport " +
                     "VALUES (@name, @code, @city, @address, @location_x, @location_y, @company, @photo, @description)",
-                    dataBase.GetConnection()
-                );
+                    dataBase.GetConnection());
 
                 command.Parameters.AddWithValue("@name", TextBoxName.Text);
                 command.Parameters.AddWithValue("@code", limitedTextBox.Text);
@@ -331,12 +330,15 @@ namespace AiroHelper
                 command.Parameters.AddWithValue("@company", TextBoxCompany.Text);
                 command.Parameters.AddWithValue("@photo", Photo);
                 command.Parameters.AddWithValue("@description", TextBoxDescription.Text);
-
+                
                 int newAirportId = (int)command.ExecuteScalar();
+                AplicationContext.AirId = newAirportId;
                 dataBase.CloseConnection();
 
                 MessageBox.Show("Аэропорт был успешно добавлен");
 
+                
+                
                 // Открытие другой формы и передача ID
                 Schema schemafrom = new Schema(newAirportId);
                 schemafrom.Show();
