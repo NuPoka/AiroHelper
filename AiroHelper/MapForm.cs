@@ -54,7 +54,7 @@ namespace AiroHelper
         {
             GMapOverlay ListAir = new GMapOverlay("AirPort");
 
-            Bitmap originalImage = new Bitmap(@"D:\AiroHelper\AiroHelper\Resources\gps.png");
+            Bitmap originalImage = new Bitmap(@"C:\Users\731-20\Source\Repos\AiroHelper\AiroHelper\Resources\gps.png");
             int newWidth = (int)(originalImage.Width * 0.5);
             int newHeight = (int)(originalImage.Height * 0.5);
             Bitmap resizedImage = new Bitmap(originalImage, new Size(newWidth, newHeight));

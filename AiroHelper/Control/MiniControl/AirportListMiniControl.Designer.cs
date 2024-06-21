@@ -66,6 +66,7 @@
             this.labelNameM.Size = new System.Drawing.Size(15, 13);
             this.labelNameM.TabIndex = 6;
             this.labelNameM.Text = "id";
+            this.labelNameM.Click += new System.EventHandler(this.labelNameM_Click);
             // 
             // BtnAirport
             // 

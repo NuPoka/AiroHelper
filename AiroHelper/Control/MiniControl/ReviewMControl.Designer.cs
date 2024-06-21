@@ -75,9 +75,9 @@
             this.labelRiviewComment.AutoSize = false;
             this.labelRiviewComment.BackColor = System.Drawing.Color.Transparent;
             this.labelRiviewComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelRiviewComment.Location = new System.Drawing.Point(192, 1);
+            this.labelRiviewComment.Location = new System.Drawing.Point(278, 15);
             this.labelRiviewComment.Name = "labelRiviewComment";
-            this.labelRiviewComment.Size = new System.Drawing.Size(703, 45);
+            this.labelRiviewComment.Size = new System.Drawing.Size(614, 31);
             this.labelRiviewComment.TabIndex = 1;
             this.labelRiviewComment.Text = "labelRiviewComment";
             // 

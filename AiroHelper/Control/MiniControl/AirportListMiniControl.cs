@@ -1,9 +1,11 @@
-﻿using System;
+﻿using AiroHelper.Control.MiniControl;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.Common;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Data.OleDb;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -18,7 +20,6 @@ namespace AiroHelper
     public partial class AirportListMiniControl : UserControl
     {
         DataBase dataBase = new DataBase();
-
         public AirportListMiniControl(Image airportImage, string airportDescription, string aidi)
         {
             InitializeComponent();
@@ -35,6 +36,7 @@ namespace AiroHelper
                 FillAirportData(out airPorts, out airopoprtid);
                 FillFacilitis(airPorts, airopoprtid);
                 FillSchema(airPorts, airopoprtid);
+                Review(airPorts, airopoprtid);
                 airPorts.Dock = DockStyle.Fill;
                 AiroportsInfo.Instance.pnlNif.Controls["AirPortsControl"].BringToFront();
 
@@ -47,7 +49,25 @@ namespace AiroHelper
                 dataBase.CloseConnection();
             }
         }
+        private void Review(AirPortsControl airPorts, int airopoprtid)
+        {
+            dataBase.OpenConnection();
+            SqlCommand command = new SqlCommand("SELECT * FROM [Review] JOIN [Users] ON Review.User_Id = Users.Id_User JOIN [Airoports] ON Review.Airoport_id = Airoports.Id_Airoport WHERE Airoport_id = @aidi", dataBase.GetConnection());
+            command.Parameters.AddWithValue("@aidi", airopoprtid);
+            SqlDataReader reader = command.ExecuteReader();
+            airPorts.flowLayoutPanelReview.Controls.Clear();
+            while (reader.Read())
+            {
+                ReviewMControl review = new ReviewMControl();
 
+                review.labelReviewUserName.Text = reader["User_Name"].ToString();
+                review.labelId.Text = reader["Airoport_Name"].ToString();
+                review.labelRiviewComment.Text = reader["Review_Comment"].ToString();
+                airPorts.flowLayoutPanelReview.Controls.Add(review);
+            }
+            reader.Close();
+            dataBase.CloseConnection();
+        }
         private void FillFacilitis(AirPortsControl airPorts, int airopoprtid)
         {
             dataBase.OpenConnection();
@@ -186,6 +206,11 @@ namespace AiroHelper
                 reader.Close();
                 dataBase.CloseConnection();
             }
+        }
+
+        private void labelNameM_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

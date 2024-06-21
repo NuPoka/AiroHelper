@@ -1,5 +1,6 @@
 ﻿using AiroHelper.Control;
 using AiroHelper.Control.MiniControl;
+using GMap.NET.MapProviders;
 using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,6 @@ namespace AiroHelper
 {
     public partial class AirPortsControl : UserControl
     {
-       
         DataBase dataBase = new DataBase();
         public AirPortsControl()
         {
@@ -114,24 +114,6 @@ namespace AiroHelper
                 roadControl.LabelAutoTrans.Text = reader["Transport_Auto"].ToString();
                 roadControl.LabelTaxiTrans.Text = reader["Transport_Taxi"].ToString();
                 road.flowLayoutPanel1.Controls.Add(roadControl);
-            }
-            reader.Close();
-            dataBase.CloseConnection();
-        }
-
-        private void AirPortsControl_Load(object sender, EventArgs e)
-        {
-            dataBase.OpenConnection();
-            SqlCommand command = new SqlCommand("SELECT * FROM [Review] WHERE Airoport_id='" + this.labelId.Text + "'", dataBase.GetConnection());
-            SqlDataReader reader = command.ExecuteReader();
-            flowLayoutPanelReview.Controls.Clear();
-            while (reader.Read())
-            {
-                ReviewMControl review = new ReviewMControl();
-                review.labelReviewUserName.Text = reader["User_Id"].ToString();
-                review.labelId.Text = reader["Airoport_id"].ToString();
-                review.labelRiviewComment.Text = reader["Review_Comment"].ToString();
-                flowLayoutPanelReview.Controls.Add(review);
             }
             reader.Close();
             dataBase.CloseConnection();

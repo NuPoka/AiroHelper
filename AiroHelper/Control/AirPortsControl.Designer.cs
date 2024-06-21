@@ -35,6 +35,7 @@
             this.guna2VSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.guna2Separator5 = new Guna.UI2.WinForms.Guna2Separator();
             this.lableRating = new System.Windows.Forms.Label();
+            this.BtnClaim = new Guna.UI2.WinForms.Guna2Button();
             this.RatingStar = new Guna.UI2.WinForms.Guna2RatingStar();
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.labelPhoto = new System.Windows.Forms.Label();
@@ -43,8 +44,12 @@
             this.labelCity = new System.Windows.Forms.Label();
             this.labelCode = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label25 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.flowLayoutPanelReview = new System.Windows.Forms.FlowLayoutPanel();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -84,21 +89,6 @@
             this.guna2Separator8 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Separator7 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Separator6 = new Guna.UI2.WinForms.Guna2Separator();
-            this.guna2VSeparator3 = new Guna.UI2.WinForms.Guna2VSeparator();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.labelDesc = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.labelEtaj = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.label5 = new System.Windows.Forms.Label();
-            this.flowLayoutPanelReview = new System.Windows.Forms.FlowLayoutPanel();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -114,28 +104,38 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
+            this.guna2VSeparator3 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BtnClaim = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.labelDesc = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelEtaj = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
-            this.guna2Panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.guna2Panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.guna2Panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.guna2Panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -169,7 +169,7 @@
             this.labelId.Name = "labelId";
             this.labelId.Size = new System.Drawing.Size(13, 13);
             this.labelId.TabIndex = 17;
-            this.labelId.Text = "1";
+            this.labelId.Text = "3";
             // 
             // BtnRoad
             // 
@@ -216,6 +216,30 @@
             this.lableRating.Size = new System.Drawing.Size(45, 25);
             this.lableRating.TabIndex = 14;
             this.lableRating.Text = "5,0";
+            // 
+            // BtnClaim
+            // 
+            this.BtnClaim.Animated = true;
+            this.BtnClaim.AutoRoundedCorners = true;
+            this.BtnClaim.BackColor = System.Drawing.Color.Transparent;
+            this.BtnClaim.BorderRadius = 21;
+            this.BtnClaim.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnClaim.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnClaim.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnClaim.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnClaim.FillColor = System.Drawing.Color.Yellow;
+            this.BtnClaim.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnClaim.ForeColor = System.Drawing.Color.Black;
+            this.BtnClaim.Image = global::AiroHelper.Properties.Resources.favorites_black;
+            this.BtnClaim.IndicateFocus = true;
+            this.BtnClaim.Location = new System.Drawing.Point(783, 156);
+            this.BtnClaim.Name = "BtnClaim";
+            this.BtnClaim.Size = new System.Drawing.Size(180, 45);
+            this.BtnClaim.TabIndex = 9;
+            this.BtnClaim.Text = "В избранное";
+            this.BtnClaim.UseTransparentBackground = true;
+            this.BtnClaim.Visible = false;
+            this.BtnClaim.Click += new System.EventHandler(this.BtnClaim_Click);
             // 
             // RatingStar
             // 
@@ -300,6 +324,17 @@
             this.labelName.TabIndex = 1;
             this.labelName.Text = "Название";
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.FillColor = System.Drawing.Color.DarkGray;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(17, 12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(178, 189);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // label25
             // 
             this.label25.AutoSize = true;
@@ -336,6 +371,33 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(966, 1022);
             this.guna2Panel2.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(451, 2613);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 13);
+            this.label6.TabIndex = 49;
+            // 
+            // flowLayoutPanelReview
+            // 
+            this.flowLayoutPanelReview.BackColor = System.Drawing.Color.White;
+            this.flowLayoutPanelReview.Location = new System.Drawing.Point(6, 1710);
+            this.flowLayoutPanelReview.Name = "flowLayoutPanelReview";
+            this.flowLayoutPanelReview.Size = new System.Drawing.Size(927, 357);
+            this.flowLayoutPanelReview.TabIndex = 48;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(18, 1666);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(433, 31);
+            this.label5.TabIndex = 47;
+            this.label5.Text = "Отзывы от других пользователей";
             // 
             // panel4
             // 
@@ -725,134 +787,6 @@
             this.guna2Separator6.Size = new System.Drawing.Size(295, 10);
             this.guna2Separator6.TabIndex = 43;
             // 
-            // guna2VSeparator3
-            // 
-            this.guna2VSeparator3.Location = new System.Drawing.Point(579, 5);
-            this.guna2VSeparator3.Name = "guna2VSeparator3";
-            this.guna2VSeparator3.Size = new System.Drawing.Size(10, 394);
-            this.guna2VSeparator3.TabIndex = 18;
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.guna2Panel3.Controls.Add(this.guna2Separator1);
-            this.guna2Panel3.Controls.Add(this.labelDesc);
-            this.guna2Panel3.Location = new System.Drawing.Point(16, 30);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(557, 369);
-            this.guna2Panel3.TabIndex = 11;
-            // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.BackColor = System.Drawing.Color.Black;
-            this.guna2Separator1.FillColor = System.Drawing.Color.Black;
-            this.guna2Separator1.Location = new System.Drawing.Point(154, 0);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(264, 10);
-            this.guna2Separator1.TabIndex = 72;
-            // 
-            // labelDesc
-            // 
-            this.labelDesc.AutoSize = false;
-            this.labelDesc.BackColor = System.Drawing.Color.Transparent;
-            this.labelDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelDesc.Location = new System.Drawing.Point(1, 13);
-            this.labelDesc.Name = "labelDesc";
-            this.labelDesc.Size = new System.Drawing.Size(551, 353);
-            this.labelDesc.TabIndex = 11;
-            this.labelDesc.Text = "   Опись";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Cyan;
-            this.panel1.Controls.Add(this.labelEtaj);
-            this.panel1.Location = new System.Drawing.Point(3, 421);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(928, 47);
-            this.panel1.TabIndex = 42;
-            // 
-            // labelEtaj
-            // 
-            this.labelEtaj.AutoSize = true;
-            this.labelEtaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelEtaj.ForeColor = System.Drawing.Color.Black;
-            this.labelEtaj.Location = new System.Drawing.Point(411, 10);
-            this.labelEtaj.Name = "labelEtaj";
-            this.labelEtaj.Size = new System.Drawing.Size(84, 25);
-            this.labelEtaj.TabIndex = 13;
-            this.labelEtaj.Text = "1 этаж";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.label25);
-            this.panel5.Location = new System.Drawing.Point(653, 6);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 31);
-            this.panel5.TabIndex = 46;
-            // 
-            // guna2Panel5
-            // 
-            this.guna2Panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.guna2Panel5.BorderColor = System.Drawing.Color.Black;
-            this.guna2Panel5.BorderThickness = 2;
-            this.guna2Panel5.Controls.Add(this.label1);
-            this.guna2Panel5.Location = new System.Drawing.Point(167, 6);
-            this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(267, 31);
-            this.guna2Panel5.TabIndex = 12;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(83, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 24);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Описание";
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 35;
-            this.guna2Elipse1.TargetControl = this.guna2Panel3;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.BorderRadius = 35;
-            this.guna2Elipse2.TargetControl = this.guna2Panel4;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.BorderRadius = 25;
-            this.guna2Elipse3.TargetControl = this.guna2Panel5;
-            // 
-            // guna2Elipse4
-            // 
-            this.guna2Elipse4.BorderRadius = 25;
-            this.guna2Elipse4.TargetControl = this.panel5;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(18, 1666);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(433, 31);
-            this.label5.TabIndex = 47;
-            this.label5.Text = "Отзывы от других пользователей";
-            // 
-            // flowLayoutPanelReview
-            // 
-            this.flowLayoutPanelReview.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanelReview.Location = new System.Drawing.Point(6, 1710);
-            this.flowLayoutPanelReview.Name = "flowLayoutPanelReview";
-            this.flowLayoutPanelReview.Size = new System.Drawing.Size(927, 357);
-            this.flowLayoutPanelReview.TabIndex = 48;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -1035,6 +969,13 @@
             this.label24.TabIndex = 40;
             this.label24.Text = "    Медпункты:";
             // 
+            // guna2VSeparator3
+            // 
+            this.guna2VSeparator3.Location = new System.Drawing.Point(579, 5);
+            this.guna2VSeparator3.Name = "guna2VSeparator3";
+            this.guna2VSeparator3.Size = new System.Drawing.Size(10, 394);
+            this.guna2VSeparator3.TabIndex = 18;
+            // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.DarkGray;
@@ -1075,48 +1016,107 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // BtnClaim
+            // guna2Panel3
             // 
-            this.BtnClaim.Animated = true;
-            this.BtnClaim.AutoRoundedCorners = true;
-            this.BtnClaim.BackColor = System.Drawing.Color.Transparent;
-            this.BtnClaim.BorderRadius = 21;
-            this.BtnClaim.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnClaim.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnClaim.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnClaim.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnClaim.FillColor = System.Drawing.Color.Yellow;
-            this.BtnClaim.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.BtnClaim.ForeColor = System.Drawing.Color.Black;
-            this.BtnClaim.Image = global::AiroHelper.Properties.Resources.favorites_black;
-            this.BtnClaim.IndicateFocus = true;
-            this.BtnClaim.Location = new System.Drawing.Point(783, 156);
-            this.BtnClaim.Name = "BtnClaim";
-            this.BtnClaim.Size = new System.Drawing.Size(180, 45);
-            this.BtnClaim.TabIndex = 9;
-            this.BtnClaim.Text = "В избранное";
-            this.BtnClaim.UseTransparentBackground = true;
-            this.BtnClaim.Visible = false;
-            this.BtnClaim.Click += new System.EventHandler(this.BtnClaim_Click);
+            this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.guna2Panel3.Controls.Add(this.guna2Separator1);
+            this.guna2Panel3.Controls.Add(this.labelDesc);
+            this.guna2Panel3.Location = new System.Drawing.Point(16, 30);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(557, 369);
+            this.guna2Panel3.TabIndex = 11;
             // 
-            // guna2PictureBox1
+            // guna2Separator1
             // 
-            this.guna2PictureBox1.FillColor = System.Drawing.Color.DarkGray;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(17, 12);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(178, 189);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
+            this.guna2Separator1.BackColor = System.Drawing.Color.Black;
+            this.guna2Separator1.FillColor = System.Drawing.Color.Black;
+            this.guna2Separator1.Location = new System.Drawing.Point(154, 0);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(264, 10);
+            this.guna2Separator1.TabIndex = 72;
             // 
-            // label6
+            // labelDesc
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(451, 2613);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 13);
-            this.label6.TabIndex = 49;
+            this.labelDesc.AutoSize = false;
+            this.labelDesc.BackColor = System.Drawing.Color.Transparent;
+            this.labelDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelDesc.Location = new System.Drawing.Point(1, 13);
+            this.labelDesc.Name = "labelDesc";
+            this.labelDesc.Size = new System.Drawing.Size(551, 353);
+            this.labelDesc.TabIndex = 11;
+            this.labelDesc.Text = "   Опись";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Cyan;
+            this.panel1.Controls.Add(this.labelEtaj);
+            this.panel1.Location = new System.Drawing.Point(3, 421);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(928, 47);
+            this.panel1.TabIndex = 42;
+            // 
+            // labelEtaj
+            // 
+            this.labelEtaj.AutoSize = true;
+            this.labelEtaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelEtaj.ForeColor = System.Drawing.Color.Black;
+            this.labelEtaj.Location = new System.Drawing.Point(411, 10);
+            this.labelEtaj.Name = "labelEtaj";
+            this.labelEtaj.Size = new System.Drawing.Size(84, 25);
+            this.labelEtaj.TabIndex = 13;
+            this.labelEtaj.Text = "1 этаж";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.label25);
+            this.panel5.Location = new System.Drawing.Point(653, 6);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(200, 31);
+            this.panel5.TabIndex = 46;
+            // 
+            // guna2Panel5
+            // 
+            this.guna2Panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.guna2Panel5.BorderColor = System.Drawing.Color.Black;
+            this.guna2Panel5.BorderThickness = 2;
+            this.guna2Panel5.Controls.Add(this.label1);
+            this.guna2Panel5.Location = new System.Drawing.Point(167, 6);
+            this.guna2Panel5.Name = "guna2Panel5";
+            this.guna2Panel5.Size = new System.Drawing.Size(267, 31);
+            this.guna2Panel5.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(83, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 24);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Описание";
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 35;
+            this.guna2Elipse1.TargetControl = this.guna2Panel3;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 35;
+            this.guna2Elipse2.TargetControl = this.guna2Panel4;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.BorderRadius = 25;
+            this.guna2Elipse3.TargetControl = this.guna2Panel5;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.BorderRadius = 25;
+            this.guna2Elipse4.TargetControl = this.panel5;
             // 
             // AirPortsControl
             // 
@@ -1126,9 +1126,9 @@
             this.Controls.Add(this.guna2Panel1);
             this.Name = "AirPortsControl";
             this.Size = new System.Drawing.Size(966, 1243);
-            this.Load += new System.EventHandler(this.AirPortsControl_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -1139,6 +1139,10 @@
             this.panel2.PerformLayout();
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -1146,11 +1150,6 @@
             this.panel5.PerformLayout();
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -9,7 +9,7 @@ namespace AiroHelper
 {
     internal class DataBase
     {
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-PD7QD52;Initial Catalog=AiroHelper;Integrated Security=True;");
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source=gogs.wsr.ru;Initial Catalog=AiroHelper;User ID=731-20;Password=oU8fFUHH");
 
         public void OpenConnection()
         {
