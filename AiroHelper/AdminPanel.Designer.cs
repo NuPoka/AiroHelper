@@ -58,6 +58,8 @@
             this.labelMessenge = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.TextBoxDescriptionSmall = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -106,6 +108,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.SlateBlue;
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.TextBoxDescriptionSmall);
             this.panel2.Controls.Add(this.guna2Panel1);
             this.panel2.Controls.Add(this.ShareBtn);
             this.panel2.Controls.Add(this.SharePictureBox);
@@ -589,7 +593,7 @@
             this.TextBoxDescription.PasswordChar = '\0';
             this.TextBoxDescription.PlaceholderText = "";
             this.TextBoxDescription.SelectedText = "";
-            this.TextBoxDescription.Size = new System.Drawing.Size(620, 134);
+            this.TextBoxDescription.Size = new System.Drawing.Size(353, 134);
             this.TextBoxDescription.TabIndex = 10;
             // 
             // panelInfo
@@ -627,6 +631,38 @@
             // 
             this.guna2Elipse1.BorderRadius = 45;
             this.guna2Elipse1.TargetControl = this;
+            // 
+            // TextBoxDescriptionSmall
+            // 
+            this.TextBoxDescriptionSmall.BorderRadius = 10;
+            this.TextBoxDescriptionSmall.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBoxDescriptionSmall.DefaultText = "";
+            this.TextBoxDescriptionSmall.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBoxDescriptionSmall.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBoxDescriptionSmall.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxDescriptionSmall.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBoxDescriptionSmall.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxDescriptionSmall.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TextBoxDescriptionSmall.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBoxDescriptionSmall.Location = new System.Drawing.Point(398, 356);
+            this.TextBoxDescriptionSmall.Multiline = true;
+            this.TextBoxDescriptionSmall.Name = "TextBoxDescriptionSmall";
+            this.TextBoxDescriptionSmall.PasswordChar = '\0';
+            this.TextBoxDescriptionSmall.PlaceholderText = "";
+            this.TextBoxDescriptionSmall.SelectedText = "";
+            this.TextBoxDescriptionSmall.Size = new System.Drawing.Size(261, 134);
+            this.TextBoxDescriptionSmall.TabIndex = 15;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.label9.Location = new System.Drawing.Point(398, 338);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(130, 15);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "Краткое описание";
             // 
             // AdminPanel
             // 
@@ -685,5 +721,7 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2TextBox TextBoxCoorditik_Y;
+        private System.Windows.Forms.Label label9;
+        private Guna.UI2.WinForms.Guna2TextBox TextBoxDescriptionSmall;
     }
 }

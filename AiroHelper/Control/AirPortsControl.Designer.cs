@@ -536,135 +536,135 @@
             this.labelMedpunkt.AutoSize = true;
             this.labelMedpunkt.Location = new System.Drawing.Point(244, 346);
             this.labelMedpunkt.Name = "labelMedpunkt";
-            this.labelMedpunkt.Size = new System.Drawing.Size(41, 13);
+            this.labelMedpunkt.Size = new System.Drawing.Size(26, 13);
             this.labelMedpunkt.TabIndex = 71;
-            this.labelMedpunkt.Text = "label40";
+            this.labelMedpunkt.Text = "Нет";
             // 
             // labelValuta
             // 
             this.labelValuta.AutoSize = true;
             this.labelValuta.Location = new System.Drawing.Point(245, 325);
             this.labelValuta.Name = "labelValuta";
-            this.labelValuta.Size = new System.Drawing.Size(41, 13);
+            this.labelValuta.Size = new System.Drawing.Size(26, 13);
             this.labelValuta.TabIndex = 70;
-            this.labelValuta.Text = "label39";
+            this.labelValuta.Text = "Нет";
             // 
             // labelBankomat
             // 
             this.labelBankomat.AutoSize = true;
             this.labelBankomat.Location = new System.Drawing.Point(245, 300);
             this.labelBankomat.Name = "labelBankomat";
-            this.labelBankomat.Size = new System.Drawing.Size(41, 13);
+            this.labelBankomat.Size = new System.Drawing.Size(26, 13);
             this.labelBankomat.TabIndex = 69;
-            this.labelBankomat.Text = "label38";
+            this.labelBankomat.Text = "Нет";
             // 
             // labelBuisnessClass
             // 
             this.labelBuisnessClass.AutoSize = true;
             this.labelBuisnessClass.Location = new System.Drawing.Point(244, 276);
             this.labelBuisnessClass.Name = "labelBuisnessClass";
-            this.labelBuisnessClass.Size = new System.Drawing.Size(41, 13);
+            this.labelBuisnessClass.Size = new System.Drawing.Size(26, 13);
             this.labelBuisnessClass.TabIndex = 68;
-            this.labelBuisnessClass.Text = "label37";
+            this.labelBuisnessClass.Text = "Нет";
             // 
             // labelVIPClass
             // 
             this.labelVIPClass.AutoSize = true;
             this.labelVIPClass.Location = new System.Drawing.Point(245, 252);
             this.labelVIPClass.Name = "labelVIPClass";
-            this.labelVIPClass.Size = new System.Drawing.Size(41, 13);
+            this.labelVIPClass.Size = new System.Drawing.Size(26, 13);
             this.labelVIPClass.TabIndex = 67;
-            this.labelVIPClass.Text = "label36";
+            this.labelVIPClass.Text = "Нет";
             // 
             // labelSPA
             // 
             this.labelSPA.AutoSize = true;
             this.labelSPA.Location = new System.Drawing.Point(245, 227);
             this.labelSPA.Name = "labelSPA";
-            this.labelSPA.Size = new System.Drawing.Size(41, 13);
+            this.labelSPA.Size = new System.Drawing.Size(26, 13);
             this.labelSPA.TabIndex = 66;
-            this.labelSPA.Text = "label35";
+            this.labelSPA.Text = "Нет";
             // 
             // labelVIP
             // 
             this.labelVIP.AutoSize = true;
             this.labelVIP.Location = new System.Drawing.Point(245, 204);
             this.labelVIP.Name = "labelVIP";
-            this.labelVIP.Size = new System.Drawing.Size(41, 13);
+            this.labelVIP.Size = new System.Drawing.Size(26, 13);
             this.labelVIP.TabIndex = 65;
-            this.labelVIP.Text = "label34";
+            this.labelVIP.Text = "Нет";
             // 
             // labelBuisness
             // 
             this.labelBuisness.AutoSize = true;
             this.labelBuisness.Location = new System.Drawing.Point(245, 180);
             this.labelBuisness.Name = "labelBuisness";
-            this.labelBuisness.Size = new System.Drawing.Size(41, 13);
+            this.labelBuisness.Size = new System.Drawing.Size(26, 13);
             this.labelBuisness.TabIndex = 64;
-            this.labelBuisness.Text = "label33";
+            this.labelBuisness.Text = "Нет";
             // 
             // labelFastTrack
             // 
             this.labelFastTrack.AutoSize = true;
             this.labelFastTrack.Location = new System.Drawing.Point(245, 155);
             this.labelFastTrack.Name = "labelFastTrack";
-            this.labelFastTrack.Size = new System.Drawing.Size(41, 13);
+            this.labelFastTrack.Size = new System.Drawing.Size(26, 13);
             this.labelFastTrack.TabIndex = 63;
-            this.labelFastTrack.Text = "label32";
+            this.labelFastTrack.Text = "Нет";
             // 
             // labelBiletCSO
             // 
             this.labelBiletCSO.AutoSize = true;
             this.labelBiletCSO.Location = new System.Drawing.Point(245, 131);
             this.labelBiletCSO.Name = "labelBiletCSO";
-            this.labelBiletCSO.Size = new System.Drawing.Size(41, 13);
+            this.labelBiletCSO.Size = new System.Drawing.Size(26, 13);
             this.labelBiletCSO.TabIndex = 62;
-            this.labelBiletCSO.Text = "label31";
+            this.labelBiletCSO.Text = "Нет";
             // 
             // labelBronirovanie
             // 
             this.labelBronirovanie.AutoSize = true;
             this.labelBronirovanie.Location = new System.Drawing.Point(245, 106);
             this.labelBronirovanie.Name = "labelBronirovanie";
-            this.labelBronirovanie.Size = new System.Drawing.Size(41, 13);
+            this.labelBronirovanie.Size = new System.Drawing.Size(26, 13);
             this.labelBronirovanie.TabIndex = 61;
-            this.labelBronirovanie.Text = "label30";
+            this.labelBronirovanie.Text = "Нет";
             // 
             // labelCofe
             // 
             this.labelCofe.AutoSize = true;
             this.labelCofe.Location = new System.Drawing.Point(245, 82);
             this.labelCofe.Name = "labelCofe";
-            this.labelCofe.Size = new System.Drawing.Size(41, 13);
+            this.labelCofe.Size = new System.Drawing.Size(26, 13);
             this.labelCofe.TabIndex = 60;
-            this.labelCofe.Text = "label29";
+            this.labelCofe.Text = "Нет";
             // 
             // labelShop
             // 
             this.labelShop.AutoSize = true;
             this.labelShop.Location = new System.Drawing.Point(245, 59);
             this.labelShop.Name = "labelShop";
-            this.labelShop.Size = new System.Drawing.Size(41, 13);
+            this.labelShop.Size = new System.Drawing.Size(26, 13);
             this.labelShop.TabIndex = 59;
-            this.labelShop.Text = "label28";
+            this.labelShop.Text = "Нет";
             // 
             // labelRoziskBagaj
             // 
             this.labelRoziskBagaj.AutoSize = true;
             this.labelRoziskBagaj.Location = new System.Drawing.Point(245, 36);
             this.labelRoziskBagaj.Name = "labelRoziskBagaj";
-            this.labelRoziskBagaj.Size = new System.Drawing.Size(41, 13);
+            this.labelRoziskBagaj.Size = new System.Drawing.Size(26, 13);
             this.labelRoziskBagaj.TabIndex = 58;
-            this.labelRoziskBagaj.Text = "label27";
+            this.labelRoziskBagaj.Text = "Нет";
             // 
             // labelPriemBagaj
             // 
             this.labelPriemBagaj.AutoSize = true;
             this.labelPriemBagaj.Location = new System.Drawing.Point(245, 12);
             this.labelPriemBagaj.Name = "labelPriemBagaj";
-            this.labelPriemBagaj.Size = new System.Drawing.Size(41, 13);
+            this.labelPriemBagaj.Size = new System.Drawing.Size(26, 13);
             this.labelPriemBagaj.TabIndex = 57;
-            this.labelPriemBagaj.Text = "label26";
+            this.labelPriemBagaj.Text = "Нет";
             // 
             // guna2VSeparator4
             // 

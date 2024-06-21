@@ -301,7 +301,8 @@ namespace AiroHelper
                     string.IsNullOrEmpty(TextBoxCoorditik_Y.Text) ||
                     string.IsNullOrEmpty(TextBoxCompany.Text) ||
                     SharePictureBox.Image == null ||
-                    string.IsNullOrEmpty(TextBoxDescription.Text))
+                    string.IsNullOrEmpty(TextBoxDescription.Text) ||
+                    string.IsNullOrEmpty(TextBoxDescriptionSmall.Text))
                 {
                     MessageBox.Show("Пожалуйста, заполните все поля.");
                     return;
@@ -316,9 +317,9 @@ namespace AiroHelper
                 memoryStream.Read(Photo, 0, Photo.Length);
 
                 SqlCommand command = new SqlCommand(
-                    "INSERT INTO Airoports (Airoport_Name, Airoport_Code, Airoport_City, Airoport_Аddress, Airoport_Location_x, Airoport_Location_y, Airoport_Company, Airoport_Map_Image, Airoport_Description) " +
+                    "INSERT INTO Airoports (Airoport_Name, Airoport_Code, Airoport_City, Airoport_Аddress, Airoport_Location_x, Airoport_Location_y, Airoport_Company, Airoport_Map_Image, Airoport_Description, Airoport_Description_Max) " +
                     "OUTPUT INSERTED.Id_Airoport " +
-                    "VALUES (@name, @code, @city, @address, @location_x, @location_y, @company, @photo, @description)",
+                    "VALUES (@name, @code, @city, @address, @location_x, @location_y, @company, @photo, @descriptionmax, @description)",
                     dataBase.GetConnection());
 
                 command.Parameters.AddWithValue("@name", TextBoxName.Text);
@@ -329,8 +330,9 @@ namespace AiroHelper
                 command.Parameters.AddWithValue("@location_y", TextBoxCoorditik_Y.Text);
                 command.Parameters.AddWithValue("@company", TextBoxCompany.Text);
                 command.Parameters.AddWithValue("@photo", Photo);
-                command.Parameters.AddWithValue("@description", TextBoxDescription.Text);
-                
+                command.Parameters.AddWithValue("@descriptionmax", TextBoxDescription.Text);
+                command.Parameters.AddWithValue("@description", TextBoxDescriptionSmall.Text);
+
                 int newAirportId = (int)command.ExecuteScalar();
                 AplicationContext.AirId = newAirportId;
                 dataBase.CloseConnection();

@@ -30,14 +30,13 @@
         {
             this.panelUsers = new System.Windows.Forms.Panel();
             this.guna2VSeparator4 = new Guna.UI2.WinForms.Guna2VSeparator();
-            this.guna2VSeparator3 = new Guna.UI2.WinForms.Guna2VSeparator();
-            this.labelPassword = new System.Windows.Forms.Label();
             this.pictureBoxDelete = new System.Windows.Forms.PictureBox();
             this.guna2VSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.labelName = new System.Windows.Forms.Label();
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.labelMail = new System.Windows.Forms.Label();
             this.PictureBoxUsers = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelUsers.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxUsers)).BeginInit();
@@ -46,9 +45,8 @@
             // panelUsers
             // 
             this.panelUsers.BackColor = System.Drawing.Color.SlateBlue;
+            this.panelUsers.Controls.Add(this.label1);
             this.panelUsers.Controls.Add(this.guna2VSeparator4);
-            this.panelUsers.Controls.Add(this.guna2VSeparator3);
-            this.panelUsers.Controls.Add(this.labelPassword);
             this.panelUsers.Controls.Add(this.pictureBoxDelete);
             this.panelUsers.Controls.Add(this.guna2VSeparator2);
             this.panelUsers.Controls.Add(this.labelName);
@@ -66,23 +64,6 @@
             this.guna2VSeparator4.Name = "guna2VSeparator4";
             this.guna2VSeparator4.Size = new System.Drawing.Size(10, 24);
             this.guna2VSeparator4.TabIndex = 8;
-            // 
-            // guna2VSeparator3
-            // 
-            this.guna2VSeparator3.Location = new System.Drawing.Point(477, 7);
-            this.guna2VSeparator3.Name = "guna2VSeparator3";
-            this.guna2VSeparator3.Size = new System.Drawing.Size(10, 24);
-            this.guna2VSeparator3.TabIndex = 7;
-            // 
-            // labelPassword
-            // 
-            this.labelPassword.AutoSize = true;
-            this.labelPassword.ForeColor = System.Drawing.Color.White;
-            this.labelPassword.Location = new System.Drawing.Point(487, 13);
-            this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(45, 13);
-            this.labelPassword.TabIndex = 6;
-            this.labelPassword.Text = "Пароль";
             // 
             // pictureBoxDelete
             // 
@@ -141,6 +122,17 @@
             this.PictureBoxUsers.TabIndex = 0;
             this.PictureBoxUsers.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(13, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "1";
+            // 
             // ListUserMiniControler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -160,13 +152,12 @@
 
         public System.Windows.Forms.Panel panelUsers;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator4;
-        private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator3;
-        public System.Windows.Forms.Label labelPassword;
         public System.Windows.Forms.PictureBox pictureBoxDelete;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator2;
         public System.Windows.Forms.Label labelName;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator1;
         public System.Windows.Forms.Label labelMail;
         public Guna.UI2.WinForms.Guna2CirclePictureBox PictureBoxUsers;
+        public System.Windows.Forms.Label label1;
     }
 }

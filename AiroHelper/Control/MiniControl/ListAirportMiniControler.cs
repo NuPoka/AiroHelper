@@ -39,7 +39,7 @@ namespace AiroHelper
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Не удалось удалить схему: " + ex.Message);
+              
             }
         }
         private void DeleteTransport()
@@ -52,7 +52,7 @@ namespace AiroHelper
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Не удалось удалить транспорт: " + ex.Message);
+               
             }
         }
         private void DeleteAirport()
@@ -70,7 +70,7 @@ namespace AiroHelper
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Не удалось удалить аэропорт: " + ex.Message);
+               
             }
         }
     }

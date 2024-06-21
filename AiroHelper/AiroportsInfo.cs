@@ -188,9 +188,10 @@ namespace AiroHelper
             while (reader.Read())
             {
                 ListUserMiniControler Item = new ListUserMiniControler();
+                Item.label1.Text = reader[0].ToString();
                 Item.labelMail.Text = reader[1].ToString();
                 Item.labelName.Text = reader[2].ToString();
-                Item.labelPassword.Text = reader[3].ToString();
+                //Item.labelPassword.Text = reader[3].ToString();
 
                 admin.flowLayoutPanelUser.Controls.Add(Item);
                 userCount++;
